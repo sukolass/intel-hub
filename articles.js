@@ -2,13 +2,17 @@
 // Diese Datei wird bei jeder Aktualisierung automatisch um neue Funde, Zusammenfassungen und Videos erweitert.
 
 window.INTEL_HUB_DATA = {
-  "lastUpdated": "2026-10-23T22:25:00+02:00",
-  "version": "1.0.0",
+  "lastUpdated": "2026-10-23T23:40:00+02:00",
+  "version": "1.1.0",
   "hubName": "Personal Intel & Apologetics Hub",
   "articles": [
+    // =============================================================
+    // AKTUELLE ARTIKEL & DOSSIERS (AKTIV)
+    // =============================================================
     {
       "id": "perowskit-status",
       "category": "perowskit",
+      "archived": false,
       "title": "Perowskit-Silizium-Tandemzellen: Der Sprung über 35 % Wirkungsgrad",
       "source": "Industrie- & Forschungsradar",
       "author": "Oxford PV / LONGi / Fraunhofer ISE",
@@ -26,6 +30,7 @@ window.INTEL_HUB_DATA = {
     {
       "id": "perowskit-oxford-pv",
       "category": "perowskit",
+      "archived": false,
       "title": "Oxford PV startet kommerzielle Auslieferung aus Brandenburg",
       "source": "PV Magazine & Fachpresse",
       "author": "Oxford PV Werksreport",
@@ -43,6 +48,7 @@ window.INTEL_HUB_DATA = {
     {
       "id": "photogrammetrie-guide",
       "category": "photogrammetrie",
+      "archived": false,
       "title": "3D Gaussian Splatting Guide: Wie Laien heute kostenlos & mühelos 3D-Welten scannen",
       "source": "Praxis-Dossier & Tool-Check",
       "author": "Niantic / Scaniverse / Luma AI",
@@ -61,6 +67,7 @@ window.INTEL_HUB_DATA = {
     {
       "id": "photogrammetrie-mesh-future",
       "category": "photogrammetrie",
+      "archived": false,
       "title": "Vom Splat zum 3D-Druck: Splat-to-Mesh KI-Konverter",
       "source": "Computer Graphics Research",
       "author": "SIGGRAPH & Open Source Community",
@@ -78,6 +85,7 @@ window.INTEL_HUB_DATA = {
     {
       "id": "food-precision-fermentation",
       "category": "labor-food",
+      "archived": false,
       "title": "Präzisionsfermentation: Echte Milchproteine & Kasein-Käse ohne Kuh",
       "source": "Biotech & Agrar-Analyse",
       "author": "FoodTech Monitor / Good Food Institute",
@@ -95,6 +103,7 @@ window.INTEL_HUB_DATA = {
     {
       "id": "food-cultivated-meat",
       "category": "labor-food",
+      "archived": false,
       "title": "Kultiviertes In-vitro-Fleisch: Warum es im Supermarkt noch bis 2030+ dauert",
       "source": "Cellular Agriculture Dossier",
       "author": "FoodTech Watchdog",
@@ -112,6 +121,7 @@ window.INTEL_HUB_DATA = {
     {
       "id": "israel-security-doctrine",
       "category": "israel",
+      "archived": false,
       "title": "Israels Sicherheitsarchitektur nach dem 7. Oktober: Abschreckung & Mehrfronten-Realität",
       "source": "Strategische Sicherheitsanalyse",
       "author": "IDF & Pro-Israel Defense Think Tanks",
@@ -129,6 +139,7 @@ window.INTEL_HUB_DATA = {
     {
       "id": "israel-abraham-accords",
       "category": "israel",
+      "archived": false,
       "title": "Abraham-Abkommen halten trotz Belastungsprobe: Neue Achse gegen Teheran",
       "source": "Diplomatisches Briefing",
       "author": "Jerusalem Institute for Strategy and Security",
@@ -146,6 +157,7 @@ window.INTEL_HUB_DATA = {
     {
       "id": "apologetics-mike-winger",
       "category": "apologetik",
+      "archived": false,
       "title": "Mike Winger (BibleThinker): Q&A Ep. 80/81, Irrlehren-Kritik & Biblische Klarheit",
       "source": "YouTube: BibleThinker",
       "author": "Pastor Mike Winger",
@@ -164,6 +176,7 @@ window.INTEL_HUB_DATA = {
     {
       "id": "apologetics-gavin-ortlund",
       "category": "apologetik",
+      "archived": false,
       "title": "Gavin Ortlund (Truth Unites): „Why Christianity Makes Sense“ & Friedvolle Debatten",
       "source": "YouTube: Truth Unites",
       "author": "Dr. Gavin Ortlund",
@@ -181,6 +194,7 @@ window.INTEL_HUB_DATA = {
     {
       "id": "apologetics-inspiring-philosophy",
       "category": "apologetik",
+      "archived": false,
       "title": "Michael Jones & Than (InspiringPhilosophy): Das „Islamische Dilemma“ & Trinität",
       "source": "YouTube: InspiringPhilosophy",
       "author": "Michael Jones & Than Christopoulos",
@@ -198,6 +212,7 @@ window.INTEL_HUB_DATA = {
     {
       "id": "apologetics-wes-huff",
       "category": "apologetik",
+      "archived": false,
       "title": "Wes Huff: Manuskripte, Peterson Academy & Millionenpublikum bei Diary of a CEO",
       "source": "Apologetics Canada & Medienauftritte",
       "author": "Wes Huff (PhD Cand.)",
@@ -215,6 +230,7 @@ window.INTEL_HUB_DATA = {
     {
       "id": "apologetics-testify-melissa",
       "category": "apologetik",
+      "archived": false,
       "title": "Erik Manning (Testify) & Melissa Dougherty: Unbeabsichtigte Übereinstimmungen & New Age Kritik",
       "source": "YouTube: Testify & Melissa Dougherty",
       "author": "Erik Manning / Melissa Dougherty",
@@ -232,6 +248,7 @@ window.INTEL_HUB_DATA = {
     {
       "id": "apologetics-mcgrews",
       "category": "apologetik",
+      "archived": false,
       "title": "Die McGrew-Familie: Lydia, Timothy & Bethel McGrew über Erkenntnistheorie & Kultur",
       "source": "Analytische Philosophie & Essays",
       "author": "Dr. Lydia McGrew, Dr. Timothy McGrew, Bethel McGrew",
@@ -244,6 +261,64 @@ window.INTEL_HUB_DATA = {
       "content": "<div class=\"space-y-2 text-xs\"><div class=\"p-2.5 rounded bg-surface-850 border border-slate-800\"><strong class=\"text-purple-300\">Dr. Lydia McGrew:</strong><br/>Kritisiert literarische „Fiktionalisierungs-Theorien“ auch innerhalb evangelikaler Kreise. Sie belegt in Büchern und Podcasts, dass die Evangelisten geschichtliche Fakten berichten wollten und keine dramaturgischen Erfindungen machten.</div><div class=\"p-2.5 rounded bg-surface-850 border border-slate-800\"><strong class=\"text-purple-300\">Dr. Timothy McGrew:</strong><br/>Philosophie-Professor und Meister des Bayes-Theorems. Seine Arbeiten zur Wahrscheinlichkeitsrechnung beweisen, dass Wunderberichte bei solider Zeugenschaft mathematisch hochplausibel sind.</div><div class=\"p-2.5 rounded bg-surface-850 border border-slate-800\"><strong class=\"text-purple-300\">Bethel McGrew (Substack <em>Further Up</em>):</strong><br/>Schreibt brillante Kolumnen für <em>WORLD</em>, <em>Compact</em> und <em>The Lamp</em> zur Verteidigung christlicher Kultur, Bildung und Kunst im Zeitalter der digitalen Zerstreuung.</div></div>",
       "tags": ["#LydiaMcGrew", "#TimothyMcGrew", "#BethelMcGrew", "#Bayes", "#Erkenntnistheorie"],
       "link": "https://lydiamcgrew.com",
+      "embedType": "none"
+    },
+
+    // =============================================================
+    // ARCHIV: FRÜHERE MELDUNGEN & HISTORISCHE ENTWICKLUNGEN
+    // =============================================================
+    {
+      "id": "archive-perowskit-2023",
+      "category": "perowskit",
+      "archived": true,
+      "title": "[Archiv 2023] Erster Meilenstein: Perowskit-Silizium überschreitet 28 %",
+      "source": "Archivierter Forschungsbericht",
+      "author": "Helmholtz-Zentrum Berlin",
+      "date": "Historisch (2023)",
+      "badge": "Archiv",
+      "badgeColor": "amber",
+      "readTime": "2 Min. Lesezeit",
+      "summary": "Rückblick: Der historische Moment, als Perowskit-Tandemzellen zum ersten Mal bewiesen, dass sie die theoretische Grenze von reinem Silizium im Dauertest übertreffen können.",
+      "citizenTimeline": "Grundlagenphase vor industriellem Hochlauf",
+      "content": "<p class=\"text-slate-300 text-xs mb-3 leading-relaxed\">Dieser historische Meilenstein zeigte erstmals, dass Tandem-Strukturen stabil über 1.000 Stunden betrieben werden konnten. Dies war das wissenschaftliche Fundament für die heutigen kommerziellen Fabriken in Brandenburg und China.</p>",
+      "tags": ["#Archiv", "#Perowskit", "#Geschichte"],
+      "link": "https://www.helmholtz-berlin.de",
+      "embedType": "none"
+    },
+    {
+      "id": "archive-nerf-origins",
+      "category": "photogrammetrie",
+      "archived": true,
+      "title": "[Archiv 2021] Die Geburt von NeRF: Als KI erstmals 3D-Blickwinkel lernte",
+      "source": "Archivierter Fachartikel",
+      "author": "UC Berkeley / Mildenhall et al.",
+      "date": "Historisch (2021/2022)",
+      "badge": "Archiv",
+      "badgeColor": "cyan",
+      "readTime": "3 Min. Lesezeit",
+      "summary": "Die Vorgänger-Technologie: Bevor 2023 das schnellere 3D Gaussian Splatting erfunden wurde, benötigten Neural Radiance Fields (NeRF) noch Stunden für das Rendern einer einzigen Szene.",
+      "citizenTimeline": "Vorgänger-Generation von 3DGS",
+      "content": "<p class=\"text-slate-300 text-xs mb-3 leading-relaxed\">NeRFs revolutionierten das Konzept der Tiefenrekonstruktion, waren jedoch für Laien zu rechenintensiv. Erst die Entdeckung von Gaussian Splats machte 3D-Scanning in Sekunden auf Smartphones wie mit Scaniverse möglich.</p>",
+      "tags": ["#Archiv", "#NeRF", "#3DGS-Ursprung"],
+      "link": "https://matthewmildenhall.github.io/nerf/",
+      "embedType": "none"
+    },
+    {
+      "id": "archive-singapore-food",
+      "category": "labor-food",
+      "archived": true,
+      "title": "[Archiv 2020] Singapur erteilt weltweit erste Zulassung für Zuchtfleisch",
+      "source": "Archivierte Pressemitteilung",
+      "author": "Singapore Food Agency",
+      "date": "Historisch (Dezember 2020)",
+      "badge": "Archiv",
+      "badgeColor": "emerald",
+      "readTime": "2 Min. Lesezeit",
+      "summary": "Der globale Startschuss: Eat Just erhielt in Singapur die Genehmigung, im Labor kultiviertes Hähnchenfleisch in einem Privatclub namens 1880 an Gäste zu servieren.",
+      "citizenTimeline": "Erste historische Zulassung weltweit",
+      "content": "<p class=\"text-slate-300 text-xs mb-3 leading-relaxed\">Damals kostete ein einzelner Hühnchen-Nugget noch Hunderte Dollar in der Herstellung. Obwohl seither sechs Jahre vergangen sind, verdeutlicht dieser Rückblick, wie anspruchsvoll die Skalierung auf Supermarktpreise bis heute bleibt.</p>",
+      "tags": ["#Archiv", "#Singapur", "#EatJust", "#Zulassung"],
+      "link": "https://goodmeat.co",
       "embedType": "none"
     }
   ]
