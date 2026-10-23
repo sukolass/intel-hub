@@ -28,7 +28,8 @@ def load_hub_data():
 
 
 def save_hub_data(data):
-    """Speichert die Struktur formatiert zurück in articles.js."""
+    """Speichert die Struktur formatiert zurück in articles.js und pusht zu GitHub."""
+    import subprocess
     data["lastUpdated"] = datetime.now().isoformat()
     js_content = (
         "// Automatisch gepflegte Wissens- und Artikeldatenbank für den Personal Intel Hub\n"
@@ -36,7 +37,17 @@ def save_hub_data(data):
         f"window.INTEL_HUB_DATA = {json.dumps(data, ensure_ascii=False, indent=2)};\n"
     )
     ARTICLES_JS.write_text(js_content, encoding="utf-8")
-    print(f"Erfolgreich aktualisiert: {len(data.get('articles', []))} Artikel gespeichert.")
+    print(f"Erfolgreich aktualisiert: {len(data.get('articles', []))} Artikel in articles.js gespeichert.")
+
+    # Automatischer Git-Push zu GitHub Pages
+    try:
+        subprocess.run(["git", "add", "articles.js"], cwd=BASE_DIR, check=True)
+        res = subprocess.run(["git", "commit", "-m", f"Auto-Update: Hub Stand {datetime.now().strftime('%d.%m.%Y %H:%M')}"], cwd=BASE_DIR, capture_output=True, text=True)
+        if "nothing to commit" not in res.stdout:
+            subprocess.run(["git", "push", "origin", "main"], cwd=BASE_DIR, check=True)
+            print("Erfolgreich zu GitHub Pages gepusht!")
+    except Exception as e:
+        print(f"Git Sync Info: {e}")
 
 
 def add_article(article_dict):
