@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html lang="de" class="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mein Persönlicher Intel Hub | Dossiers, News & Apologetik</title>
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#f0f9ff',
+              500: '#0284c7',
+              600: '#0369a1',
+              900: '#0c4a6e',
+            },
+            surface: {
+              800: '#1e293b',
+              850: '#172033',
+              900: '#0f172a',
+              950: '#090d16',
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <!-- External Data Source (wird bei automatischen Updates fortlaufend aktualisiert) -->
+  <script src="articles.js"></script>
+  <style>
+    /* Custom Scrollbars */
+    ::-webkit-scrollbar { width: 6px; height: 6px; }
+    ::-webkit-scrollbar-track { background: #0f172a; }
+    ::-webkit-scrollbar-thumb { background: #334155; border-radius: 4px; }
+    ::-webkit-scrollbar-thumb:hover { background: #475569; }
+    .badge-glow {
+      box-shadow: 0 0 15px -3px rgba(56, 189, 248, 0.25);
+    }
+  </style>
+</head>
+<body class="bg-surface-950 text-slate-100 min-h-screen font-sans antialiased flex flex-col md:flex-row">
+
+  <!-- ================= SIDEBAR ================= -->
+  <aside class="w-full md:w-72 bg-surface-900 border-r border-slate-800 p-5 flex flex-col shrink-0 md:h-screen md:sticky md:top-0 overflow-y-auto">
+    <!-- Logo & Title -->
+    <div class="flex items-center gap-3 mb-5 pb-4 border-b border-slate-800">
+      <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-sky-500 to-indigo-600 flex items-center justify-center text-white shadow-lg shadow-sky-500/20">
+        <i data-lucide="compass" class="w-5 h-5"></i>
+      </div>
+      <div>
+        <h1 class="text-base font-bold text-white tracking-tight">Personal Intel Hub</h1>
+        <p class="text-xs text-sky-400 font-medium flex items-center gap-1.5">
+          <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+          <span>Auto-Sync Bereit</span>
+        </p>
+      </div>
+    </div>
+
+    <!-- Quick Stats Bar -->
+    <div class="bg-surface-850 p-3 rounded-lg border border-slate-800/80 mb-5 text-xs space-y-1.5">
+      <div class="flex justify-between items-center">
+        <span class="text-slate-400 text-[10px] uppercase tracking-wider font-semibold">Letzter Abgleich</span>
+        <span class="font-mono text-emerald-400 font-medium" id="lastUpdatedBadge">Gerade eben</span>
+      </div>
+      <div class="flex justify-between items-center pt-1 border-t border-slate-800">
+        <span class="text-slate-400 text-[10px] uppercase tracking-wider font-semibold">Aktive Artikel</span>
+        <span class="font-bold text-white" id="totalArticlesBadge">0</span>
+      </div>
+    </div>
+
+    <!-- Navigation / Categories -->
+    <nav class="space-y-1 text-sm font-medium flex-1">
+      <button onclick="setFilter('all')" id="nav-all" class="nav-item w-full flex items-center gap-3 px-3.5 py-2.5 rounded-lg text-left transition bg-sky-500/10 text-sky-400 border border-sky-500/20">
+        <i data-lucide="layout-grid" class="w-4 h-4"></i>
+        <span>Alle Artikel & Updates</span>
+        <span class="ml-auto text-xs px-2 py-0.5 rounded-full bg-slate-800 text-slate-300" id="count-all">0</span>
+      </button>
+
+      <div class="pt-3 pb-1.5 px-3 text-[11px] font-semibold tracking-wider text-slate-400 uppercase">
+        Technologie & Zukunft
+      </div>
+
+      <button onclick="setFilter('perowskit')" id="nav-perowskit" class="nav-item w-full flex items-center gap-3 px-3.5 py-2.5 rounded-lg text-left transition text-slate-300 hover:bg-surface-800">
+        <i data-lucide="sun" class="w-4 h-4 text-amber-400"></i>
+        <span>Perowskit & Solar</span>
+        <span class="ml-auto text-xs px-2 py-0.5 rounded-full bg-slate-800 text-slate-300" id="count-perowskit">0</span>
+      </button>
+
+      <button onclick="setFilter('photogrammetrie')" id="nav-photogrammetrie" class="nav-item w-full flex items-center gap-3 px-3.5 py-2.5 rounded-lg text-left transition text-slate-300 hover:bg-surface-800">
+        <i data-lucide="box" class="w-4 h-4 text-cyan-400"></i>
+        <span>KI-Photogrammetrie & 3D</span>
+        <span class="ml-auto text-xs px-2 py-0.5 rounded-full bg-slate-800 text-slate-300" id="count-photogrammetrie">0</span>
+      </button>
+
+      <button onclick="setFilter('labor-food')" id="nav-labor-food" class="nav-item w-full flex items-center gap-3 px-3.5 py-2.5 rounded-lg text-left transition text-slate-300 hover:bg-surface-800">
+        <i data-lucide="flask-conical" class="w-4 h-4 text-emerald-400"></i>
+        <span>Labor-Milch & Fleisch</span>
+        <span class="ml-auto text-xs px-2 py-0.5 rounded-full bg-slate-800 text-slate-300" id="count-labor-food">0</span>
+      </button>
+
+      <div class="pt-3 pb-1.5 px-3 text-[11px] font-semibold tracking-wider text-slate-400 uppercase">
+        Geopolitik & Welt
+      </div>
+
+      <button onclick="setFilter('israel')" id="nav-israel" class="nav-item w-full flex items-center gap-3 px-3.5 py-2.5 rounded-lg text-left transition text-slate-300 hover:bg-surface-800">
+        <i data-lucide="shield-check" class="w-4 h-4 text-blue-400"></i>
+        <span>Israel & Sicherheit</span>
+        <span class="ml-auto text-xs px-2 py-0.5 rounded-full bg-slate-800 text-slate-300" id="count-israel">0</span>
+      </button>
+
+      <div class="pt-3 pb-1.5 px-3 text-[11px] font-semibold tracking-wider text-slate-400 uppercase">
+        Glaube & Apologetik
+      </div>
+
+      <button onclick="setFilter('apologetik')" id="nav-apologetik" class="nav-item w-full flex items-center gap-3 px-3.5 py-2.5 rounded-lg text-left transition text-slate-300 hover:bg-surface-800">
+        <i data-lucide="book-open" class="w-4 h-4 text-purple-400"></i>
+        <span>Christliche Apologetik</span>
+        <span class="ml-auto text-xs px-2 py-0.5 rounded-full bg-slate-800 text-slate-300" id="count-apologetik">0</span>
+      </button>
+
+      <div class="pt-3 pb-1.5 px-3 text-[11px] font-semibold tracking-wider text-slate-400 uppercase">
+        Personalisierung
+      </div>
+
+      <button onclick="setFilter('custom')" id="nav-custom" class="nav-item w-full flex items-center gap-3 px-3.5 py-2.5 rounded-lg text-left transition text-slate-300 hover:bg-surface-800">
+        <i data-lucide="sparkles" class="w-4 h-4 text-rose-400"></i>
+        <span>Eigene Interessen & Vorschläge</span>
+        <span class="ml-auto text-xs px-2 py-0.5 rounded-full bg-slate-800 text-slate-300" id="count-custom">0</span>
+      </button>
+    </nav>
+
+    <!-- Bottom Actions -->
+    <div class="pt-4 mt-auto border-t border-slate-800 space-y-2">
+      <button onclick="openSuggestModal()" class="w-full flex items-center justify-center gap-2 px-3 py-2.5 rounded-lg bg-sky-600 hover:bg-sky-500 text-white font-medium text-xs shadow-md shadow-sky-600/20 transition">
+        <i data-lucide="plus-circle" class="w-4 h-4"></i>
+        <span>Neues Thema vorschlagen</span>
+      </button>
+      <button onclick="showUpdateInstructions()" class="w-full flex items-center justify-center gap-2 px-3 py-2 rounded-lg bg-surface-850 hover:bg-surface-800 border border-slate-700/80 text-slate-300 text-xs transition">
+        <i data-lucide="refresh-cw" class="w-3.5 h-3.5 text-emerald-400"></i>
+        <span>Auto-Update Status</span>
+      </button>
+    </div>
+  </aside>
+
+  <!-- ================= MAIN CONTENT ================= -->
+  <main class="flex-1 flex flex-col min-h-screen overflow-x-hidden">
+    
+    <!-- Top Header Bar with Search & Quick View Toggles -->
+    <header class="bg-surface-900/80 backdrop-blur-md sticky top-0 z-20 border-b border-slate-800 px-6 py-4 flex flex-col sm:flex-row gap-4 items-center justify-between">
+      <div class="relative w-full sm:w-96">
+        <i data-lucide="search" class="w-4 h-4 text-slate-400 absolute left-3.5 top-1/2 -translate-y-1/2"></i>
+        <input 
+          type="text" 
+          id="searchInput" 
+          oninput="handleSearch()" 
+          placeholder="Artikel, Autoren, Begriffe durchsuchen..." 
+          class="w-full bg-surface-850 border border-slate-700/80 rounded-lg pl-10 pr-4 py-2 text-xs text-white placeholder-slate-400 focus:outline-none focus:border-sky-500 transition"
+        />
+      </div>
+
+      <div class="flex items-center gap-3 w-full sm:w-auto justify-end">
+        <button onclick="toggleTimelineView()" id="timelineToggleBtn" class="flex items-center gap-1.5 px-3 py-2 rounded-lg bg-surface-800 hover:bg-surface-850 border border-slate-700 text-xs font-medium text-slate-300 transition">
+          <i data-lucide="gauge" class="w-3.5 h-3.5 text-amber-400"></i>
+          <span>Wann für Bürger? Radar</span>
+        </button>
+
+        <button onclick="exportUserData()" title="Exportiere Daten & Vorschläge als Backup" class="p-2 rounded-lg bg-surface-800 hover:bg-surface-850 border border-slate-700 text-slate-400 hover:text-white transition">
+          <i data-lucide="download" class="w-4 h-4"></i>
+        </button>
+      </div>
+    </header>
+
+    <!-- Sub-Hero / Category Banner -->
+    <section class="p-6 pb-2" id="heroBanner">
+      <div class="bg-gradient-to-r from-slate-900 via-surface-900 to-slate-900 border border-slate-800/80 rounded-2xl p-6 relative overflow-hidden">
+        <div class="absolute -right-10 -bottom-10 w-60 h-60 bg-sky-500/10 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="relative z-10">
+          <div class="flex flex-wrap items-center gap-2 mb-3">
+            <div class="inline-flex items-center gap-2 px-2.5 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-xs font-medium">
+              <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+              <span>Automatische Wissensbasis aktiv</span>
+            </div>
+            <span class="text-xs text-slate-400" id="syncStatusText">Synchronisiert mit articles.js</span>
+          </div>
+          <h2 class="text-xl md:text-2xl font-bold text-white mb-2" id="categoryTitle">Alle Themen & Recherchen</h2>
+          <p class="text-slate-400 text-xs md:text-sm max-w-3xl leading-relaxed" id="categoryDescription">
+            Dein persönliches Dossier-Dashboard mit fundierten Zusammenfassungen, Zeitplänen für Bürger, Video-Einbettungen und automatischer Einspeisung neuer Funde.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Special Feature: "Wann für Bürger?" Tech-Radar Timeline (Toggleable) -->
+    <section class="px-6 py-4" id="timelineSection">
+      <div class="bg-surface-900 border border-amber-500/20 rounded-xl p-5 relative overflow-hidden">
+        <div class="flex items-center justify-between mb-4 border-b border-slate-800 pb-3">
+          <div class="flex items-center gap-2.5">
+            <div class="p-1.5 rounded-lg bg-amber-500/10 text-amber-400">
+              <i data-lucide="gauge" class="w-5 h-5"></i>
+            </div>
+            <div>
+              <h3 class="font-bold text-white text-sm">Marktreife-Radar: Wann haben normale Bürger & Laien etwas davon?</h3>
+              <p class="text-xs text-slate-400">Zeitleiste für Perowskit, KI-3D und Labor-Lebensmittel zu bezahlbaren Preisen</p>
+            </div>
+          </div>
+          <span class="text-[11px] font-mono px-2 py-0.5 rounded bg-slate-800 text-slate-300">Prognose 2024–2035</span>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <!-- Perowskit Timeline -->
+          <div class="bg-surface-850 p-4 rounded-lg border border-slate-800">
+            <div class="flex items-center justify-between mb-2">
+              <span class="text-xs font-bold text-amber-400 flex items-center gap-1.5">
+                <i data-lucide="sun" class="w-3.5 h-3.5"></i> Perowskit-Solar
+              </span>
+              <span class="text-[10px] px-1.5 py-0.5 rounded bg-amber-500/10 text-amber-300 font-semibold">2027–2029</span>
+            </div>
+            <p class="text-xs text-slate-300 mb-2 leading-relaxed">
+              <strong>Aktuell (2024–2026):</strong> Oxford PV liefert erste Tandem-Module (26,9 %) für Pilot-Dächer. Noch teuer.<br/>
+              <strong>Für Bürger (2028+):</strong> 20–30 % mehr Strom auf Balkon & Dach zu Standardpreisen.
+            </p>
+            <div class="w-full bg-slate-800 rounded-full h-1.5">
+              <div class="bg-amber-400 h-1.5 rounded-full" style="width: 55%"></div>
+            </div>
+          </div>
+
+          <!-- KI-Photogrammetrie Timeline -->
+          <div class="bg-surface-850 p-4 rounded-lg border border-slate-800">
+            <div class="flex items-center justify-between mb-2">
+              <span class="text-xs font-bold text-cyan-400 flex items-center gap-1.5">
+                <i data-lucide="box" class="w-3.5 h-3.5"></i> KI-Photogrammetrie (3DGS)
+              </span>
+              <span class="text-[10px] px-1.5 py-0.5 rounded bg-emerald-500/10 text-emerald-300 font-semibold">HEUTE MÖGLICH</span>
+            </div>
+            <p class="text-xs text-slate-300 mb-2 leading-relaxed">
+              <strong>Bereits heute (2024–2026):</strong> Scaniverse (gratis auf Handy) berechnet fotorealistische 3D-Szenen komplett lokal.<br/>
+              <strong>Minimaler Aufwand:</strong> 0 € Kosten, kein Vorwissen nötig.
+            </p>
+            <div class="w-full bg-slate-800 rounded-full h-1.5">
+              <div class="bg-emerald-400 h-1.5 rounded-full" style="width: 95%"></div>
+            </div>
+          </div>
+
+          <!-- Labor-Food Timeline -->
+          <div class="bg-surface-850 p-4 rounded-lg border border-slate-800">
+            <div class="flex items-center justify-between mb-2">
+              <span class="text-xs font-bold text-emerald-400 flex items-center gap-1.5">
+                <i data-lucide="flask-conical" class="w-3.5 h-3.5"></i> Labor-Lebensmittel
+              </span>
+              <span class="text-[10px] px-1.5 py-0.5 rounded bg-blue-500/10 text-blue-300 font-semibold">2-Stufen-Markt</span>
+            </div>
+            <p class="text-xs text-slate-300 mb-2 leading-relaxed">
+              <strong>Milch-Casein/Käse (2026–2028):</strong> Präzisionsfermentation im Laden bezahlbar.<br/>
+              <strong>In-vitro-Fleisch (2032+):</strong> Erst in den 2030er Jahren im Discounter konkurrenzfähig.
+            </p>
+            <div class="w-full bg-slate-800 rounded-full h-1.5">
+              <div class="bg-blue-400 h-1.5 rounded-full" style="width: 35%"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Articles Grid Section -->
+    <section class="p-6 pt-2">
+      <!-- Active Filter Pill & Stats -->
+      <div class="flex items-center justify-between mb-4">
+        <div class="flex items-center gap-2">
+          <span class="text-xs text-slate-400 font-medium">Aktive Ansicht:</span>
+          <span id="activeFilterBadge" class="text-xs font-semibold px-2.5 py-1 rounded-md bg-sky-500/20 text-sky-300 border border-sky-500/30">
+            Alle Themen
+          </span>
+        </div>
+        <div class="text-xs text-slate-400">
+          Zeige <span id="displayedCount" class="font-bold text-white">0</span> Einträge
+        </div>
+      </div>
+
+      <!-- The Cards Grid -->
+      <div id="articlesGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+        <!-- Rendered via JS -->
+      </div>
+
+      <!-- Empty State -->
+      <div id="emptyState" class="hidden text-center py-16 border border-dashed border-slate-800 rounded-2xl">
+        <div class="w-12 h-12 rounded-full bg-slate-800 flex items-center justify-center text-slate-400 mx-auto mb-3">
+          <i data-lucide="search-x" class="w-6 h-6"></i>
+        </div>
+        <h4 class="text-sm font-semibold text-white mb-1">Keine Einträge gefunden</h4>
+        <p class="text-xs text-slate-400 max-w-sm mx-auto mb-4">Passe deinen Suchbegriff an oder wechsle die Kategorie in der linken Leiste.</p>
+        <button onclick="resetFilters()" class="text-xs px-3 py-1.5 rounded bg-surface-800 hover:bg-surface-850 text-sky-400 border border-slate-700">
+          Filter zurücksetzen
+        </button>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= MODAL: NEUES THEMA VORSCHLAGEN ================= -->
+  <div id="suggestModal" class="fixed inset-0 bg-black/70 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
+    <div class="bg-surface-900 border border-slate-700 rounded-2xl w-full max-w-lg p-6 shadow-2xl relative">
+      <button onclick="closeSuggestModal()" class="absolute right-4 top-4 text-slate-400 hover:text-white">
+        <i data-lucide="x" class="w-5 h-5"></i>
+      </button>
+
+      <div class="flex items-center gap-3 mb-4">
+        <div class="w-10 h-10 rounded-xl bg-rose-500/10 text-rose-400 flex items-center justify-center border border-rose-500/20">
+          <i data-lucide="sparkles" class="w-5 h-5"></i>
+        </div>
+        <div>
+          <h3 class="text-base font-bold text-white">Neues Interesse / Thema vorschlagen</h3>
+          <p class="text-xs text-slate-400">Wird sofort in deinen Hub eingetragen und für den nächsten Auto-Suchlauf vorgemerkt.</p>
+        </div>
+      </div>
+
+      <form id="suggestForm" onsubmit="handleSuggestSubmit(event)" class="space-y-4 text-xs">
+        <div>
+          <label class="block text-slate-300 font-medium mb-1">Thema / Fragestellung *</label>
+          <input 
+            type="text" 
+            id="sugTitle" 
+            required 
+            placeholder="z.B. Quantencomputer für Heimanwender oder Alister McGrath Debatte" 
+            class="w-full bg-surface-850 border border-slate-700 rounded-lg p-2.5 text-white focus:outline-none focus:border-rose-500"
+          />
+        </div>
+
+        <div>
+          <label class="block text-slate-300 font-medium mb-1">Kategorie / Bereich *</label>
+          <select id="sugCategory" class="w-full bg-surface-850 border border-slate-700 rounded-lg p-2.5 text-white focus:outline-none focus:border-rose-500">
+            <option value="custom">Persönliches Interesse (Neu)</option>
+            <option value="perowskit">Perowskit & Solar</option>
+            <option value="photogrammetrie">KI-Photogrammetrie & 3D</option>
+            <option value="labor-food">Labor-Lebensmittel</option>
+            <option value="israel">Israel & Sicherheit</option>
+            <option value="apologetik">Christliche Apologetik</option>
+          </select>
+        </div>
+
+        <div>
+          <label class="block text-slate-300 font-medium mb-1">Was genau interessiert dich daran? (Details/Fragen)</label>
+          <textarea 
+            id="sugNotes" 
+            rows="3" 
+            placeholder="z.B. Wann marktreif? Welche YouTube-Kanäle gibt es? Zusammenfassung der Argumente..." 
+            class="w-full bg-surface-850 border border-slate-700 rounded-lg p-2.5 text-white focus:outline-none focus:border-rose-500"
+          ></textarea>
+        </div>
+
+        <div>
+          <label class="block text-slate-300 font-medium mb-1">Optional: Link / Video-URL</label>
+          <input 
+            type="url" 
+            id="sugUrl" 
+            placeholder="https://..." 
+            class="w-full bg-surface-850 border border-slate-700 rounded-lg p-2.5 text-white focus:outline-none focus:border-rose-500"
+          />
+        </div>
+
+        <div class="pt-2 flex justify-end gap-2.5">
+          <button type="button" onclick="closeSuggestModal()" class="px-4 py-2 rounded-lg bg-surface-800 hover:bg-surface-850 text-slate-300 font-medium transition">
+            Abbrechen
+          </button>
+          <button type="submit" class="px-4 py-2 rounded-lg bg-rose-600 hover:bg-rose-500 text-white font-medium shadow-md shadow-rose-600/20 transition">
+            Thema speichern & anpinnen
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- ================= MODAL: DETAIL ANSICHT MIT EMBED ================= -->
+  <div id="detailModal" class="fixed inset-0 bg-black/80 backdrop-blur-md z-50 hidden flex items-center justify-center p-4">
+    <div class="bg-surface-900 border border-slate-700 rounded-2xl w-full max-w-3xl max-h-[90vh] overflow-y-auto p-6 shadow-2xl relative">
+      <button onclick="closeDetailModal()" class="absolute right-4 top-4 text-slate-400 hover:text-white p-1 rounded-lg bg-slate-800">
+        <i data-lucide="x" class="w-5 h-5"></i>
+      </button>
+
+      <div id="detailModalContent">
+        <!-- Rendered via JS -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= MODAL: AUTO-UPDATE STATUS & INFOS ================= -->
+  <div id="infoModal" class="fixed inset-0 bg-black/75 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
+    <div class="bg-surface-900 border border-slate-700 rounded-2xl w-full max-w-lg p-6 shadow-2xl relative text-xs">
+      <button onclick="closeInfoModal()" class="absolute right-4 top-4 text-slate-400 hover:text-white">
+        <i data-lucide="x" class="w-5 h-5"></i>
+      </button>
+
+      <div class="flex items-center gap-3 mb-4">
+        <div class="w-10 h-10 rounded-xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center border border-emerald-500/20">
+          <i data-lucide="cpu" class="w-5 h-5"></i>
+        </div>
+        <div>
+          <h3 class="text-sm font-bold text-white">Automatischer Update-Mechanismus</h3>
+          <p class="text-slate-400 text-[11px]">Wie deine Webseite fortlaufend mit frischen Artikeln gefüllt wird</p>
+        </div>
+      </div>
+
+      <div class="space-y-3 text-slate-300 leading-relaxed">
+        <div class="p-3 bg-surface-850 rounded-lg border border-slate-800">
+          <strong class="text-white block mb-1">1. Entkoppelte Datenbank (articles.js)</strong>
+          Die Website lädt alle Artikel und Videos direkt aus der Datei <code>articles.js</code>. Wenn neue Funde recherchiert werden, werden sie einfach an diese Datei angehängt – die Webseite zeigt sie sofort an, ohne dass am Web-Code etwas geändert werden muss.
+        </div>
+        <div class="p-3 bg-surface-850 rounded-lg border border-slate-800">
+          <strong class="text-white block mb-1">2. Hintergrund-Automation</strong>
+          Ein automatisierter KI-Agent kann auf Basis deines gewählten Rhythmus (z. B. täglich oder wöchentlich) eigenständig das Web durchforsten, neue Videos der Apologeten und Forschungsmeldungen zusammenfassen und direkt in deinen Hub einspeisen.
+        </div>
+        <div class="p-3 bg-surface-850 rounded-lg border border-slate-800">
+          <strong class="text-white block mb-1">3. Deine eigenen Themen werden mitüberwacht</strong>
+          Alle Themen, die du über den Button „Neues Thema vorschlagen“ eingibst, fließen in die Such-Queue für künftige Updates ein!
+        </div>
+      </div>
+
+      <div class="mt-5 pt-3 border-t border-slate-800 flex justify-end">
+        <button onclick="closeInfoModal()" class="px-4 py-2 rounded-lg bg-sky-600 hover:bg-sky-500 text-white font-medium text-xs transition">
+          Verstanden
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= SCRIPT & DATA LOGIC ================= -->
+  <script>
+    // --- STATE MANAGEMENT ---
+    let currentFilter = 'all';
+    let searchQuery = '';
+    let customItems = JSON.parse(localStorage.getItem('personal_intel_custom_items') || '[]');
+
+    // Get Base Articles from window.INTEL_HUB_DATA (articles.js)
+    function getBaseArticles() {
+      if (window.INTEL_HUB_DATA && Array.isArray(window.INTEL_HUB_DATA.articles)) {
+        return window.INTEL_HUB_DATA.articles;
+      }
+      return [];
+    }
+
+    // Combine Base + Custom
+    function getAllArticles() {
+      return [...getBaseArticles(), ...customItems];
+    }
+
+    // Initialize UI
+    function init() {
+      updateLastUpdatedInfo();
+      updateCategoryCounts();
+      renderArticles();
+      lucide.createIcons();
+    }
+
+    function updateLastUpdatedInfo() {
+      if (window.INTEL_HUB_DATA && window.INTEL_HUB_DATA.lastUpdated) {
+        const d = new Date(window.INTEL_HUB_DATA.lastUpdated);
+        const formatted = d.toLocaleDateString('de-DE', { day: '2-digit', month: '2-digit', year: 'numeric', hour: '2-digit', minute: '2-digit' });
+        document.getElementById('lastUpdatedBadge').textContent = formatted;
+        document.getElementById('syncStatusText').textContent = 'Stand: ' + formatted + ' (articles.js)';
+      }
+      document.getElementById('totalArticlesBadge').textContent = getAllArticles().length;
+    }
+
+    // Set Active Filter
+    function setFilter(category) {
+      currentFilter = category;
+      searchQuery = '';
+      document.getElementById('searchInput').value = '';
+
+      // Update Nav active classes
+      document.querySelectorAll('.nav-item').forEach(btn => {
+        btn.classList.remove('bg-sky-500/10', 'text-sky-400', 'border', 'border-sky-500/20');
+        btn.classList.add('text-slate-300');
+      });
+      const activeBtn = document.getElementById('nav-' + category);
+      if (activeBtn) {
+        activeBtn.classList.remove('text-slate-300');
+        activeBtn.classList.add('bg-sky-500/10', 'text-sky-400', 'border', 'border-sky-500/20');
+      }
+
+      // Update Header Text & Badge
+      const titles = {
+        all: 'Alle Themen & Recherchen',
+        perowskit: 'Perowskit & Solar-Zukunft',
+        photogrammetrie: 'KI-Photogrammetrie & 3D Gaussian Splatting',
+        'labor-food': 'Zelluläre Landwirtschaft & Labor-Milch/Fleisch',
+        israel: 'Israel & Nahost-Sicherheitsdoktrin',
+        apologetik: 'Christliche Apologetik & Theologie',
+        custom: 'Deine eigenen Interessen & Vorschläge'
+      };
+
+      const badges = {
+        all: 'Alle Themen',
+        perowskit: 'Perowskit',
+        photogrammetrie: 'KI-Photogrammetrie',
+        'labor-food': 'Labor-Lebensmittel',
+        israel: 'Israel & Sicherheit',
+        apologetik: 'Apologetik',
+        custom: 'Eigene Interessen'
+      };
+
+      document.getElementById('categoryTitle').textContent = titles[category] || 'Kategorie';
+      document.getElementById('activeFilterBadge').textContent = badges[category] || category;
+
+      renderArticles();
+      lucide.createIcons();
+    }
+
+    // Search Handling
+    function handleSearch() {
+      searchQuery = document.getElementById('searchInput').value.toLowerCase().trim();
+      renderArticles();
+      lucide.createIcons();
+    }
+
+    // Reset Filters
+    function resetFilters() {
+      setFilter('all');
+    }
+
+    // Update Counts in Nav
+    function updateCategoryCounts() {
+      const all = getAllArticles();
+      document.getElementById('count-all').textContent = all.length;
+      document.getElementById('count-perowskit').textContent = all.filter(a => a.category === 'perowskit').length;
+      document.getElementById('count-photogrammetrie').textContent = all.filter(a => a.category === 'photogrammetrie').length;
+      document.getElementById('count-labor-food').textContent = all.filter(a => a.category === 'labor-food').length;
+      document.getElementById('count-israel').textContent = all.filter(a => a.category === 'israel').length;
+      document.getElementById('count-apologetik').textContent = all.filter(a => a.category === 'apologetik').length;
+      document.getElementById('count-custom').textContent = all.filter(a => a.category === 'custom').length;
+      document.getElementById('totalArticlesBadge').textContent = all.length;
+    }
+
+    // Render Cards
+    function renderArticles() {
+      const grid = document.getElementById('articlesGrid');
+      const emptyState = document.getElementById('emptyState');
+      const all = getAllArticles();
+
+      const filtered = all.filter(item => {
+        const matchesCategory = (currentFilter === 'all') || (item.category === currentFilter);
+        const matchesSearch = !searchQuery || 
+          item.title.toLowerCase().includes(searchQuery) ||
+          item.summary.toLowerCase().includes(searchQuery) ||
+          (item.author && item.author.toLowerCase().includes(searchQuery)) ||
+          item.tags.some(t => t.toLowerCase().includes(searchQuery));
+        return matchesCategory && matchesSearch;
+      });
+
+      document.getElementById('displayedCount').textContent = filtered.length;
+
+      if (filtered.length === 0) {
+        grid.innerHTML = '';
+        emptyState.classList.remove('hidden');
+        return;
+      }
+
+      emptyState.classList.add('hidden');
+      grid.innerHTML = filtered.map(item => createCardHtml(item)).join('');
+    }
+
+    // Generate Card HTML
+    function createCardHtml(item) {
+      const colorMap = {
+        amber: 'bg-amber-500/10 text-amber-400 border-amber-500/20',
+        cyan: 'bg-cyan-500/10 text-cyan-400 border-cyan-500/20',
+        emerald: 'bg-emerald-500/10 text-emerald-400 border-emerald-500/20',
+        blue: 'bg-blue-500/10 text-blue-400 border-blue-500/20',
+        purple: 'bg-purple-500/10 text-purple-400 border-purple-500/20',
+        rose: 'bg-rose-500/10 text-rose-400 border-rose-500/20'
+      };
+
+      const badgeStyle = colorMap[item.badgeColor || 'cyan'] || colorMap.cyan;
+
+      return `
+        <article class="bg-surface-900 border border-slate-800 hover:border-slate-700/80 rounded-xl p-5 flex flex-col justify-between transition-all duration-200 hover:-translate-y-0.5 shadow-lg shadow-black/20 group">
+          <div>
+            <!-- Top Card Meta -->
+            <div class="flex items-center justify-between mb-3">
+              <span class="text-[11px] font-semibold px-2 py-0.5 rounded border ${badgeStyle}">
+                ${item.badge}
+              </span>
+              <span class="text-[11px] text-slate-400 font-mono">${item.date}</span>
+            </div>
+
+            <!-- Title -->
+            <h3 class="text-sm font-bold text-white mb-2 group-hover:text-sky-400 transition leading-snug">
+              ${item.title}
+            </h3>
+
+            <!-- Author & Source -->
+            <div class="flex items-center gap-1.5 text-[11px] text-slate-400 mb-3">
+              <i data-lucide="user" class="w-3 h-3 text-slate-400"></i>
+              <span>${item.author || item.source}</span>
+            </div>
+
+            <!-- Summary -->
+            <p class="text-xs text-slate-300 leading-relaxed mb-4">
+              ${item.summary}
+            </p>
+
+            ${item.citizenTimeline ? `
+              <div class="bg-surface-850 border border-slate-800 p-2.5 rounded-lg mb-4 text-[11px]">
+                <span class="text-slate-400 block text-[10px] uppercase font-bold tracking-wider mb-0.5">Wann für Bürger / Laien?</span>
+                <span class="text-sky-300 font-medium">${item.citizenTimeline}</span>
+              </div>
+            ` : ''}
+          </div>
+
+          <!-- Footer: Tags & Action -->
+          <div class="pt-3 border-t border-slate-800/80 flex items-center justify-between mt-auto">
+            <div class="flex flex-wrap gap-1">
+              ${item.tags.slice(0, 2).map(tag => `<span class="text-[10px] text-slate-400 bg-surface-850 px-1.5 py-0.5 rounded">${tag}</span>`).join('')}
+            </div>
+
+            <div class="flex items-center gap-2">
+              ${item.embedType === 'video' ? `
+                <button onclick="openDetailModal('${item.id}')" title="Video ansehen" class="p-1.5 rounded-md bg-red-500/10 text-red-400 hover:bg-red-500/20 border border-red-500/20 text-xs flex items-center gap-1 transition">
+                  <i data-lucide="play" class="w-3.5 h-3.5"></i>
+                  <span>Video</span>
+                </button>
+              ` : ''}
+              <button onclick="openDetailModal('${item.id}')" class="px-2.5 py-1.5 rounded-md bg-surface-800 hover:bg-surface-850 border border-slate-700 text-sky-400 text-xs font-medium flex items-center gap-1 transition">
+                <span>Dossier</span>
+                <i data-lucide="arrow-right" class="w-3 h-3"></i>
+              </button>
+            </div>
+          </div>
+        </article>
+      `;
+    }
+
+    // Modal: Detail View
+    function openDetailModal(id) {
+      const item = getAllArticles().find(a => a.id === id);
+      if (!item) return;
+
+      const container = document.getElementById('detailModalContent');
+      container.innerHTML = `
+        <div class="mb-4">
+          <div class="flex items-center gap-2 text-xs text-sky-400 mb-1">
+            <span class="font-semibold uppercase tracking-wider">${item.category}</span>
+            <span>•</span>
+            <span class="text-slate-400">${item.date}</span>
+          </div>
+          <h2 class="text-lg md:text-xl font-bold text-white mb-2 leading-snug">${item.title}</h2>
+          <div class="text-xs text-slate-400 flex items-center gap-2">
+            <span>Quelle/Autor: <strong>${item.author || item.source}</strong></span>
+          </div>
+        </div>
+
+        ${item.embedType === 'video' && item.embedUrl ? `
+          <div class="aspect-video w-full rounded-xl overflow-hidden mb-5 bg-black border border-slate-800">
+            <iframe 
+              src="${item.embedUrl}" 
+              class="w-full h-full" 
+              frameborder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+              allowfullscreen>
+            </iframe>
+          </div>
+        ` : ''}
+
+        <div class="prose prose-invert max-w-none text-slate-200 text-xs md:text-sm leading-relaxed mb-6 space-y-3">
+          ${item.content || item.summary}
+        </div>
+
+        <div class="p-4 rounded-xl bg-surface-850 border border-slate-800 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 text-xs">
+          <div>
+            <span class="text-slate-400 block text-[10px] uppercase font-bold">Direkter Link zur Originalquelle:</span>
+            <a href="${item.link}" target="_blank" rel="noopener noreferrer" class="text-sky-400 hover:underline break-all">
+              ${item.link}
+            </a>
+          </div>
+          <button onclick="copyPromptForResearch('${encodeURIComponent(item.title)}')" class="shrink-0 px-3 py-1.5 rounded-lg bg-sky-600 hover:bg-sky-500 text-white font-medium text-xs flex items-center gap-1.5 transition">
+            <i data-lucide="copy" class="w-3.5 h-3.5"></i>
+            <span>Prompt für Deep-Dive kopieren</span>
+          </button>
+        </div>
+      `;
+
+      document.getElementById('detailModal').classList.remove('hidden');
+      lucide.createIcons();
+    }
+
+    function closeDetailModal() {
+      document.getElementById('detailModal').classList.add('hidden');
+      document.getElementById('detailModalContent').innerHTML = '';
+    }
+
+    // Suggestion Modal
+    function openSuggestModal() {
+      document.getElementById('suggestModal').classList.remove('hidden');
+      lucide.createIcons();
+    }
+
+    function closeSuggestModal() {
+      document.getElementById('suggestModal').classList.add('hidden');
+      document.getElementById('suggestForm').reset();
+    }
+
+    function handleSuggestSubmit(e) {
+      e.preventDefault();
+      const title = document.getElementById('sugTitle').value;
+      const category = document.getElementById('sugCategory').value;
+      const notes = document.getElementById('sugNotes').value;
+      const url = document.getElementById('sugUrl').value;
+
+      const newItem = {
+        id: 'user-' + Date.now(),
+        category: category,
+        title: title,
+        source: 'Vom Nutzer vorgeschlagen',
+        author: 'Persönliche Recherche',
+        date: 'Neu hinzugefügt',
+        badge: 'Dein Vorschlag',
+        badgeColor: 'rose',
+        readTime: 'Notiz',
+        summary: notes || 'Vorgeschlagenes Thema zur vertieften Überwachung.',
+        citizenTimeline: 'Vorgemerkt für die nächste Recherche',
+        content: `
+          <div class="p-3 bg-rose-500/10 border border-rose-500/20 rounded-lg text-xs text-rose-300 mb-3">
+            <strong>Dies ist ein von dir vorgeschlagenes Thema!</strong>
+          </div>
+          <p class="text-slate-300 text-xs mb-2"><strong>Deine Notizen / Fragestellung:</strong></p>
+          <p class="text-slate-300 text-xs mb-4 leading-relaxed">${notes || 'Keine zusätzlichen Notizen hinterlegt.'}</p>
+          ${url ? `<p class="text-xs text-slate-400">Hinterlegter Link: <a href="${url}" target="_blank" class="text-sky-400 underline">${url}</a></p>` : ''}
+        `,
+        tags: ['#Vorschlag', '#' + category],
+        link: url || '#',
+        embedType: 'none'
+      };
+
+      customItems.unshift(newItem);
+      localStorage.setItem('personal_intel_custom_items', JSON.stringify(customItems));
+
+      closeSuggestModal();
+      updateCategoryCounts();
+      setFilter(category);
+      alert('Thema erfolgreich gespeichert! Es ist jetzt in deinem Hub sichtbar und in die Suchliste aufgenommen.');
+    }
+
+    // Toggle Timeline Section
+    function toggleTimelineView() {
+      const section = document.getElementById('timelineSection');
+      section.classList.toggle('hidden');
+    }
+
+    // Show Update Instructions Modal
+    function showUpdateInstructions() {
+      document.getElementById('infoModal').classList.remove('hidden');
+      lucide.createIcons();
+    }
+
+    function closeInfoModal() {
+      document.getElementById('infoModal').classList.add('hidden');
+    }
+
+    // Helper: Copy Prompt to paste into chat for the AI
+    function copyPromptForResearch(encodedTitle) {
+      const title = decodeURIComponent(encodedTitle);
+      const text = `Bitte recherchiere das neueste Update und alle frischen Neuigkeiten zu folgendem Thema für meinen Hub: "${title}"`;
+      navigator.clipboard.writeText(text).then(() => {
+        alert('Prompt in die Zwischenablage kopiert! Du kannst ihn einfach hier im Chat abschicken.');
+      });
+    }
+
+    // Export User Data
+    function exportUserData() {
+      const data = {
+        exportedAt: new Date().toISOString(),
+        customInterests: customItems,
+        totalArticles: getAllArticles().length
+      };
+      const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = 'mein-intel-hub-backup.json';
+      a.click();
+    }
+
+    // Run on startup
+    window.addEventListener('DOMContentLoaded', init);
+  </script>
+</body>
+</html>
