@@ -23,7 +23,8 @@ def load_hub_data():
         raise ValueError("Konnte window.INTEL_HUB_DATA in articles.js nicht parsen.")
 
     json_str = match.group(1)
-    # Behebt gängige JS-Literale falls nötig, oder verwendet Standard-JSON
+    # Entfernt reine Kommentarzeilen (z.B. // ===...), ohne URLs wie https:// zu beschädigen
+    json_str = re.sub(r"^\s*//.*$", "", json_str, flags=re.MULTILINE)
     return json.loads(json_str)
 
 
@@ -50,19 +51,28 @@ def save_hub_data(data):
         print(f"Git Sync Info: {e}")
 
 
-def add_article(article_dict):
-    """Fügt einen neuen Artikel hinzu, sofern die ID nicht bereits existiert."""
+def add_articles(articles_list):
+    """Fügt mehrere neue Artikel auf einmal hinzu, sofern deren IDs nicht existieren, und speichert/pusht einmal."""
     data = load_hub_data()
     existing_ids = {a.get("id") for a in data.get("articles", [])}
+    added = 0
 
-    if article_dict.get("id") in existing_ids:
-        print(f"Artikel mit ID '{article_dict.get('id')}' existiert bereits. Übersprungen.")
-        return False
+    for article_dict in reversed(articles_list):
+        if article_dict.get("id") in existing_ids:
+            print(f"Artikel mit ID '{article_dict.get('id')}' existiert bereits. Übersprungen.")
+            continue
+        data.setdefault("articles", []).insert(0, article_dict)
+        existing_ids.add(article_dict.get("id"))
+        added += 1
 
-    # Vorne anfügen (neueste zuerst)
-    data.setdefault("articles", []).insert(0, article_dict)
-    save_hub_data(data)
-    return True
+    if added > 0:
+        save_hub_data(data)
+    return added
+
+
+def add_article(article_dict):
+    """Fügt einen neuen Artikel hinzu, sofern die ID nicht bereits existiert."""
+    return add_articles([article_dict]) > 0
 
 
 if __name__ == "__main__":
