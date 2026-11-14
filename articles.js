@@ -2,13 +2,131 @@
 // Diese Datei wird bei jeder Aktualisierung automatisch um neue Funde, Zusammenfassungen und Videos erweitert.
 
 window.INTEL_HUB_DATA = {
-  "lastUpdated": "2026-10-23T23:40:00+02:00",
+  "lastUpdated": "2026-11-14T16:42:17.212693",
   "version": "1.1.0",
   "hubName": "Personal Intel & Apologetics Hub",
   "articles": [
-    // =============================================================
-    // AKTUELLE ARTIKEL & DOSSIERS (AKTIV)
-    // =============================================================
+    {
+      "id": "perowskit-heliene-caelux-351",
+      "category": "perowskit",
+      "archived": false,
+      "title": "Heliene & Caelux starten 27 %+ Hybrid-Tandem-Produktion – Neuer 35,1 %-Laborrekord",
+      "source": "Perovskite-Info & PV Tech",
+      "author": "Heliene / Caelux / Soochow & LONGi",
+      "date": "14. Nov 2026",
+      "badge": "Kommerzialisierung",
+      "badgeColor": "amber",
+      "readTime": "4 Min. Lesezeit",
+      "summary": "Heliene und Caelux bringen ihre Hybrid-Tandem-Module mit über 27 % Wirkungsgrad in Minnesota in die kommerzielle Produktion. Gleichzeitig erreicht ein Forschungsteam 35,1 % stabilisierte Effizienz auf texturiertem Silizium.",
+      "citizenTimeline": "Erste Großkunden-Auslieferungen laufen; Massenmarkt 2027–2029",
+      "content": "<h4 class=\"font-bold text-white text-base mb-2\">Kommerzielle Fertigung in den USA & Europa</h4><p class=\"text-slate-300 text-xs mb-3 leading-relaxed\">Der Modulhersteller <strong>Heliene</strong> und Perowskit-Entwickler <strong>Caelux</strong> überführen ihr gemeinsames „Hybrid-Tandem“-Modul in Minnesota in die kommerzielle Produktion. Durch die Kombination von Caelux-Perowskitglas mit N-Typ-Siliziumzellen werden Modulwirkungsgrade von über <strong>27 %</strong> erzielt – erste Großkunden-Lieferungen sind bereits terminiert. Zudem stellte <strong>NAED Energy</strong> mit der Plattform <em>PV-1 (T2X)</em> eine vertikale In-Line-Anlage für die Gigawatt-Massenfertigung vor.</p><h4 class=\"font-bold text-white text-base mb-2\">35,1 % Rekord auf rauen Standard-Wafern</h4><p class=\"text-slate-300 text-xs leading-relaxed\">Ein internationales Team (u. a. Soochow University, LONGi und KAUST) meldete im November 2026 zertifizierte <strong>35,1 % stabilisierten Wirkungsgrad</strong> auf texturierten Silizium-Perowskit-Tandemzellen. Ein neues Moleküldesign verhindert Verklumpungen der Lochtransportschicht auf rauen Pyramiden-Strukturen – ein wichtiger Schritt für langlebige 25-Jahres-Module.</p>",
+      "tags": [
+        "#Perowskit",
+        "#Heliene",
+        "#Caelux",
+        "#35Prozent",
+        "#Tandemzellen"
+      ],
+      "link": "https://www.perovskite-info.com",
+      "embedType": "none"
+    },
+    {
+      "id": "photogrammetrie-luma-shift-2026",
+      "category": "photogrammetrie",
+      "archived": false,
+      "title": "3DGS-Wende im Herbst 2026: Luma AI stoppt 3D-Capture – Scaniverse & Postshot dominieren",
+      "source": "Radiance Fields & VFX-Branche",
+      "author": "Niantic Spatial / Jawset / Luma AI",
+      "date": "14. Nov 2026",
+      "badge": "Tool-Update",
+      "badgeColor": "cyan",
+      "readTime": "4 Min. Lesezeit",
+      "summary": "Luma AI zieht sich mit dem Aus für Genie und Flythroughs aus der 3D-Scan-Welt zurück und fokussiert sich auf KI-Video. Für Laien und Profis setzen sich Scaniverse (Mobil) und Postshot (Desktop) als Standards durch.",
+      "citizenTimeline": "JETZT kostenlos mit Scaniverse (iOS/Android) & Postshot (PC)",
+      "content": "<h4 class=\"font-bold text-white text-base mb-2\">Luma AI verabschiedet sich vom 3D-Scanning</h4><p class=\"text-slate-300 text-xs mb-3 leading-relaxed\">Luma AI hat den Fokus vollständig auf generative Videomodelle (<em>Dream Machine</em> / <em>Ray</em>) verlagert: Das Text-to-3D-Tool <strong>Genie</strong> sowie die <em>Flythroughs</em>-App wurden eingestellt, und die alte Luma-Capture-App erhält keine aktiven Updates mehr.</p><h4 class=\"font-bold text-white text-base mb-2\">Die klaren Gewinner für Nutzer & Studios</h4><div class=\"space-y-2 text-xs mb-3\"><div class=\"p-2.5 rounded bg-surface-850 border border-slate-800\"><strong class=\"text-cyan-400\">Scaniverse (Niantic Spatial):</strong> Bleibt die Nr. 1 für Smartphones – kostenlos, lokal auf dem Gerät, mit .SPZ/.PLY-Export, 360°-Splat-Support und Anbindung an Niantics <em>VPS 2.0</em>.</div><div class=\"p-2.5 rounded bg-surface-850 border border-slate-800\"><strong class=\"text-cyan-400\">Jawset Postshot & Hollywood-VFX:</strong> Auf dem Windows-PC ist Postshot der Standard. Studios wie <em>Framestore</em> und <em>ILM</em> nutzen mittlerweile Multi-Kamera-Splats aus Postshot direkt in Blockbuster-Produktionen; Tools wie Nuke unterstützen Splats nativ.</div></div>",
+      "tags": [
+        "#3DGS",
+        "#Scaniverse",
+        "#Postshot",
+        "#LumaAI",
+        "#VFX"
+      ],
+      "link": "https://scaniverse.com",
+      "embedType": "none"
+    },
+    {
+      "id": "food-formo-fda-casein-2026",
+      "category": "labor-food",
+      "archived": false,
+      "title": "Historischer Meilenstein: Berliner Start-up Formo erhält erste FDA-Zulassung für Labor-Kasein",
+      "source": "FoodIngredientsFirst & Bioökonomie-Monitor",
+      "author": "Formo / FDA GRAS",
+      "date": "14. Nov 2026",
+      "badge": "Zulassungs-Durchbruch",
+      "badgeColor": "emerald",
+      "readTime": "4 Min. Lesezeit",
+      "summary": "Am 28. Oktober 2026 erhielt Formo als erstes Unternehmen weltweit ein „No Questions“-Schreiben der US-Behörde FDA für präzisionsfermentiertes Kasein – den Schlüsselstoff für echt schmelzenden Käse ohne Kuh.",
+      "citizenTimeline": "USA-Zulassung erteilt; EU-Supermärkte nach EFSA-Prüfung (2027–2028)",
+      "content": "<h4 class=\"font-bold text-white text-base mb-2\">Erstes präzisionsfermentiertes Kasein mit FDA-Freigabe</h4><p class=\"text-slate-300 text-xs mb-3 leading-relaxed\">Ende Oktober 2026 (28.10.) hat das Berliner Biotech-Unternehmen <strong>Formo</strong> von der US-amerikanischen FDA den offiziellen <em>„No Questions“</em>-Brief (GRAS-Status) für sein <strong>Enhanced Casein</strong> erhalten (zeitgleich erhielt auch <em>Those Vegan Cowboys</em> die Freigabe). Die Zulassung deckt zunächst Käse-Alternativen bis 25 g pro 100 g ab.</p><h4 class=\"font-bold text-white text-base mb-2\">Strategiewechsel: B2B-Zutat statt Nischenmarke</h4><p class=\"text-slate-300 text-xs leading-relaxed\">Angesichts stark gestiegener Preise für konventionelle Milchproteine positioniert sich Formo nun voll als <strong>B2B-Zulieferer</strong> für globale Lebensmittelhersteller – nicht nur für schmelzenden Käse, sondern auch für Protein-Getränke und Sportnahrung. In Europa laufen die strengeren EFSA-Novel-Food-Verfahren noch weiter.</p>",
+      "tags": [
+        "#Formo",
+        "#FDA",
+        "#Kasein",
+        "#Präzisionsfermentation",
+        "#FoodTech"
+      ],
+      "link": "https://www.foodingredientsfirst.com",
+      "embedType": "none"
+    },
+    {
+      "id": "israel-security-november-2026",
+      "category": "israel",
+      "archived": false,
+      "title": "Sicherheitslage November 2026: Iran-Vorbereitungen, Gaza-Schläge & Waffenfunde in Beirut",
+      "source": "Times of Israel & JNS Sicherheitsbriefing",
+      "author": "IDF & Sicherheitskabinett",
+      "date": "14. Nov 2026",
+      "badge": "Lagebericht",
+      "badgeColor": "blue",
+      "readTime": "4 Min. Lesezeit",
+      "summary": "Israels Sicherheitskabinett weist die IDF an, Vorbereitungen gegen den Iran zu intensivieren. In Gaza trifft die Armee einen an Geiselnahen beteiligten Hamas-Kommandeur; im Libanon werden Hisbollah-Waffenlager ausgehoben.",
+      "citizenTimeline": "Laufende Sicherheitslage & Abschreckung",
+      "content": "<h4 class=\"font-bold text-white text-base mb-2\">1. Iran-Fokus & strategische Abstimmung</h4><p class=\"text-slate-300 text-xs mb-3 leading-relaxed\">Das israelische Sicherheitskabinett hat die IDF angewiesen, die Einsatzbereitschaft für mögliche erneute Schläge gegen iranische Ziele hochzufahren, um ein Wiedererstarken von Teherans Nuklear- und Proxy-Fähigkeiten zu verhindern. Innenpolitisch gibt es nach den Wahlen vom 27. Oktober Debatten zwischen der Übergangsregierung unter Netanjahu und Generalstabschef Eyal Zamir über das richtige Timing.</p><h4 class=\"font-bold text-white text-base mb-2\">2. Gaza & neue Angriffs-Bataillone</h4><p class=\"text-slate-300 text-xs mb-3 leading-relaxed\">Die IDF führte einen gezielten Luftschlag gegen einen ranghohen Hamas-Kommandeur aus, der nach Geheimdienstangaben an der Festhaltung Dutzender israelischer Geiseln beteiligt war und Teile des Nasser-Krankenhauses als Kommandozentrale missbrauchte. Gleichzeitig stellt die Armee neue kombinierte „Attack Battalions“ (u. a. bei der 215. Artilleriebrigade) für schnelle Präzisionsschläge auf.</p><h4 class=\"font-bold text-white text-base mb-2\">3. Nordgrenze: Hisbollah unter Druck</h4><p class=\"text-slate-300 text-xs leading-relaxed\">Während die Hisbollah versucht, ihre Kommandostrukturen mit iranischen Geldern wieder aufzubauen, beschlagnahmten libanesische Sicherheitskräfte ein größeres Waffen- und Munitionsdepot in Msharafieh (Süd-Beirut). Israel beharrt weiterhin auf einer entmilitarisierten Pufferzone im Südlibanon.</p>",
+      "tags": [
+        "#Israel",
+        "#IDF",
+        "#Iran",
+        "#Gaza",
+        "#Hisbollah",
+        "#Sicherheit"
+      ],
+      "link": "https://www.timesofisrael.com",
+      "embedType": "none"
+    },
+    {
+      "id": "apologetics-november-2026-roundup",
+      "category": "apologetik",
+      "archived": false,
+      "title": "Apologetik-Update Nov 2026: Wes Huff Stellungnahme, Mike Winger (Ep. 80–84) & Gavin Ortlund",
+      "source": "YouTube & Apologetik-Monitor",
+      "author": "Mike Winger, Wes Huff, Gavin Ortlund, InspiringPhilosophy",
+      "date": "14. Nov 2026",
+      "badge": "Video-Roundup",
+      "badgeColor": "purple",
+      "readTime": "5 Min. Lesezeit",
+      "summary": "Wes Huff reagiert öffentlich auf Zitierfehler-Vorwürfe aus alten Papieren von 2016 und bittet um Gebet für seine Tochter. Mike Winger widmet dem Thema Rechenschaft (Ep. 84), während Ortlund und Michael Jones neue Video-Essays veröffentlichen.",
+      "citizenTimeline": "Aktuelle YouTube-Uploads (Okt/Nov 2026)",
+      "content": "<ul class=\"list-disc list-inside space-y-2 text-slate-300 text-xs leading-relaxed\"><li><strong>Wes Huff:</strong> Anfang November geriet Huff in eine Online-Kontroverse, nachdem Kritiker (u. a. Dan McClellan) unsaubere Zitate in rund zehn Jahre alten Academia.edu-Texten von 2016 bemängelten. Huff veröffentlichte ein Video-Statement, übernahm Verantwortung für fehlerhafte Zitierweisen aus seiner Studienzeit und bat zudem um Gebet nach einem medizinischen Notfall seiner kleinen Tochter.</li><li><strong>Mike Winger (BibleThinker):</strong> Setzte <em>„10 Qs with Mike Winger“</em> bis Episode 84 fort – inklusive Analysen zum Mormonentum, seinem Moscheebesuch-Bericht sowie <strong>Ep. 84: „Wes Huff and Accountability“</strong> über christliche Rechenschaftspflicht. Zudem erschien eine brüderliche Kritik zu Calvary Chapel Costa Mesa.</li><li><strong>Gavin Ortlund (Truth Unites):</strong> Veröffentlichte tiefgehende Videos zu Christlichem Nationalismus, der Frage ob Paulus das Christentum „entführt“ habe, Endzeit-Positionen sowie Beiträgen von der Torrey Conference.</li><li><strong>InspiringPhilosophy (Michael Jones):</strong> Fokus auf Islam-Debatten und vergleichende Religionsanalysen (u. a. Frauenbild im Islam, Debatten-Rückblicke) sowie ein Kanal-Update zur künftigen Ausrichtung.</li></ul>",
+      "tags": [
+        "#WesHuff",
+        "#MikeWinger",
+        "#GavinOrtlund",
+        "#InspiringPhilosophy",
+        "#Apologetik"
+      ],
+      "link": "https://www.youtube.com/@MikeWinger",
+      "embedType": "none"
+    },
     {
       "id": "perowskit-status",
       "category": "perowskit",
@@ -23,7 +141,12 @@ window.INTEL_HUB_DATA = {
       "summary": "Die Tandem-Technologie hat das physikalische Limit von Standard-Silizium (ca. 29 %) überwunden. LONGi erzielte im Labor Rekordwerte von 35,5 %, während Oxford PV erste Großmodule mit 26,9 % ausliefert.",
       "citizenTimeline": "2027–2029 für Privathaushalte & Balkonkraftwerke",
       "content": "<h4 class=\"font-bold text-white text-base mb-2\">Physikalischer Durchbruch & Funktionsweise</h4><p class=\"text-slate-300 text-xs mb-3 leading-relaxed\">Klassische Silizium-Solarzellen nutzen nur einen Teil des Sonnenspektrums effizient. Durch das Aufdampfen einer hauchdünnen Perowskit-Schicht auf die Silizium-Basiszelle („Tandem“) absorbiert die obere Schicht hochenergetisches blaues/grünes Licht, während Silizium das rote und infrarote Spektrum einfängt.</p><div class=\"bg-surface-850 p-3 rounded-lg border border-amber-500/20 text-xs text-amber-200 mb-3\"><strong>Wann profitiert der Normalbürger?</strong><br/>• <strong>2024–2026:</strong> Hochpreisige Pilot- und Spezialinstallationen.<br/>• <strong>2027–2028:</strong> Fertigung im Gigawatt-Maßstab (Skalierungseffekte).<br/>• <strong>Ab 2029:</strong> Standard-Module für Privathäuser und Balkonkraftwerke. Vorteil: 20–30 % mehr kWh Ertrag bei gleicher Dach- oder Balkongröße.</div><h4 class=\"font-bold text-white text-base mb-2\">Die größte Hürde: Haltbarkeit</h4><p class=\"text-slate-300 text-xs leading-relaxed\">Perowskite reagierten früher empfindlich auf Feuchtigkeit und Hitze. Durch neuartige atomare Schutzschichten (z. B. 2D/3D-Hybridstrukturen) erreichen Testmodule heute standardisierte IEC-Langzeittests für 20+ Jahre Lebensdauer.</p>",
-      "tags": ["#Perowskit", "#Tandemzellen", "#Balkonkraftwerk", "#Effizienzrekord"],
+      "tags": [
+        "#Perowskit",
+        "#Tandemzellen",
+        "#Balkonkraftwerk",
+        "#Effizienzrekord"
+      ],
       "link": "https://www.oxfordpv.com",
       "embedType": "none"
     },
@@ -41,7 +164,12 @@ window.INTEL_HUB_DATA = {
       "summary": "Das britisch-deutsche Unternehmen Oxford PV liefert seine ersten serienmäßig produzierten Tandem-Paneele aus dem brandenburgischen Werk aus und treibt weltweite Lizenzpartnerschaften voran.",
       "citizenTimeline": "Erste Wohnhaus-Dächer in Erprobung",
       "content": "<p class=\"text-slate-300 text-xs mb-3 leading-relaxed\">Mit einem zertifizierten Modul-Wirkungsgrad von 26,9 % übertreffen die Paneele herkömmliche Standardmodule (21–23 %) deutlich. Oxford-PV-CEO David Ward kündigte die Skalierung auf Multigigawatt-Kapazitäten und Lizenzpartnerschaften mit Weltmarktführern wie TrinaSolar an.</p><p class=\"text-slate-300 text-xs leading-relaxed\">Für Eigenheimbesitzer bedeutet dies künftig: Eine Solaranlage mit 10 kWp benötigt fast ein Drittel weniger Dachfläche als vor fünf Jahren.</p>",
-      "tags": ["#Brandenburg", "#MadeInGermany", "#OxfordPV", "#Solarboom"],
+      "tags": [
+        "#Brandenburg",
+        "#MadeInGermany",
+        "#OxfordPV",
+        "#Solarboom"
+      ],
       "link": "https://www.oxfordpv.com",
       "embedType": "none"
     },
@@ -59,7 +187,13 @@ window.INTEL_HUB_DATA = {
       "summary": "Vergiss komplizierte Mesh-Photogrammetrie: Mit Gaussian Splatting reichen ein Smartphone und ein langsamer Spaziergang um ein Objekt, um fotorealistische 3D-Räume zu erschaffen – komplett kostenlos.",
       "citizenTimeline": "JETZT für jeden sofort auf iOS/Android verfügbar (0 €)",
       "content": "<h4 class=\"font-bold text-white text-base mb-2\">Die Revolution: Weg von Polygonen, hin zu Splats</h4><p class=\"text-slate-300 text-xs mb-3 leading-relaxed\">Traditionelle Photogrammetrie berechnete Dreiecksnetze (Meshes), was bei Glanz, feinen Haaren oder transparenten Fenstern scheiterte. Gaussian Splatting trainiert Millionen kleiner leuchtender 3D-Ellipsen im Raum, die Blickwinkel und Lichteinfall in Echtzeit berechnen.</p><h4 class=\"font-bold text-white text-base mb-2\">Die 3 besten Werkzeuge für Laien:</h4><div class=\"space-y-2 text-xs mb-4\"><div class=\"p-2.5 rounded bg-surface-850 border border-slate-800\"><strong class=\"text-cyan-400\">1. Scaniverse (Niantic) – Beste App (iOS & Android):</strong><br/>Läuft 100 % lokal auf deinem Handy, keine Cloud-Kosten, keine Registrierung. Berechnet Splats direkt auf dem Gerät und exportiert standardisierte .ply/.spz-Dateien.</div><div class=\"p-2.5 rounded bg-surface-850 border border-slate-800\"><strong class=\"text-cyan-400\">2. Luma AI (Web & Cloud):</strong><br/>Handy-Video hochladen, Cloud rechnen lassen und sofort einen fertigen Link zum Verschicken an Freunde erhalten.</div><div class=\"p-2.5 rounded bg-surface-850 border border-slate-800\"><strong class=\"text-cyan-400\">3. Postshot (Jawset für Windows PC):</strong><br/>Für Besitzer von NVIDIA-Grafikkarten. Man sieht live im Fenster, wie das 3D-Modell in Minuten scharfgestellt wird.</div></div><div class=\"p-2.5 rounded bg-cyan-950/40 border border-cyan-800/60 text-xs text-cyan-200\"><strong>Geheimtipps für fehlerfreie Scans:</strong><br/>• Langsam gehen (keine Bewegungsunschärfe).<br/>• Gleichmäßiges Licht wählen (bewölkter Himmel oder schattenfreies Zimmer).</div>",
-      "tags": ["#GaussianSplatting", "#Scaniverse", "#3DScan", "#LumaAI", "#Kostenlos"],
+      "tags": [
+        "#GaussianSplatting",
+        "#Scaniverse",
+        "#3DScan",
+        "#LumaAI",
+        "#Kostenlos"
+      ],
       "link": "https://scaniverse.com",
       "embedType": "video",
       "embedUrl": "https://www.youtube-nocookie.com/embed/n42zX4sJtB4"
@@ -78,7 +212,12 @@ window.INTEL_HUB_DATA = {
       "summary": "Neueste Algorithmen können Gaussian Splats jetzt in saubere 3D-Druck-fähige CAD- und Polygon-Modelle umwandeln, wodurch auch Laien Gegenstände aus der Realität 1:1 nachdrucken können.",
       "citizenTimeline": "Vereinfachte One-Click-Tools für 2026/2027 im Ausbau",
       "content": "<p class=\"text-slate-300 text-xs mb-3 leading-relaxed\">Bislang war die Schwachstelle von Gaussian Splatting, dass man die Modelle zwar perfekt ansehen, aber nicht ohne Weiteres im 3D-Drucker ausdrucken oder als feste Physik-Körper in Spiele einbinden konnte.</p><p class=\"text-slate-300 text-xs leading-relaxed\">Neue Diffusions- und Surface-Extraction-Verfahren (wie SuGaR und Meshy) ziehen automatisch eine exakte Oberfläche über die Punkte. Damit rückt der Traum näher, jedes beliebige Ersatzteil einfach mit dem Smartphone abzufilmen und am 3D-Drucker zu Hause auszudrucken.</p>",
-      "tags": ["#3DDruck", "#Mesh", "#SuGaR", "#Zukunft"],
+      "tags": [
+        "#3DDruck",
+        "#Mesh",
+        "#SuGaR",
+        "#Zukunft"
+      ],
       "link": "https://github.com",
       "embedType": "none"
     },
@@ -96,7 +235,13 @@ window.INTEL_HUB_DATA = {
       "summary": "Nicht zu verwechseln mit Hafermilch: Hefen produzieren bioidentische Molken- und Kaseinproteine. Das Resultat ist echter Käse, der wie tierischer Käse schmilzt und schmeckt – ganz ohne Massentierhaltung.",
       "citizenTimeline": "Molke schon im Handel; Kasein-Käse 2026–2028 zu normalen Preisen",
       "content": "<h4 class=\"font-bold text-white text-base mb-2\">Der Schlüssel zum echten Käse: Kasein</h4><p class=\"text-slate-300 text-xs mb-3 leading-relaxed\">Pflanzliche Käsealternativen (aus Kokosfett oder Mandeln) scheitern oft am Schmelzverhalten und dem Mundgefühl. Der Grund: Es fehlt Kasein. Bei der Präzisionsfermentation bauen Mikroorganismen exakt die bovine Kasein-DNA nach.</p><div class=\"space-y-2 text-xs mb-3\"><div class=\"p-2.5 rounded bg-surface-850 border border-slate-800\"><strong class=\"text-emerald-400\">Bereits heute erhältlich (USA & ausgewählte Märkte):</strong><br/>Molkenprotein (Whey) von Herstellern wie <em>Perfect Day</em> wird bereits in Eiscreme (Brave Robot), Frischkäse und Protein-Shakes im Supermarkt verkauft.</div><div class=\"p-2.5 rounded bg-surface-850 border border-slate-800\"><strong class=\"text-emerald-400\">Wann im deutschen / europäischen Supermarkt?</strong><br/>Start-ups wie <em>Formo</em> (Berlin), <em>Vivici</em> und <em>Eden Brew</em> durchlaufen aktuell die strengen Novel-Food-Prüfungen der EFSA. Markteintritt für echten Kasein-Käse: <strong>2026–2028</strong>.</div></div><p class=\"text-slate-300 text-xs leading-relaxed\"><strong>Preisentwicklung:</strong> Sobald große Fermentationsbrauereien mit 50.000-Liter-Tanks laufen, werden diese Produkte durch den Wegfall von Futterflächen, Wasser und Rinderhaltung günstiger als konventioneller Kuhmilch-Käse sein.</p>",
-      "tags": ["#Präzisionsfermentation", "#Kasein", "#Formo", "#KäseOhneKuh", "#Supermarkt"],
+      "tags": [
+        "#Präzisionsfermentation",
+        "#Kasein",
+        "#Formo",
+        "#KäseOhneKuh",
+        "#Supermarkt"
+      ],
       "link": "https://gfi.org",
       "embedType": "none"
     },
@@ -114,7 +259,11 @@ window.INTEL_HUB_DATA = {
       "summary": "Während Präzisionsfermentations-Milch rasant skaliert, steckt echtes Zuchtfleisch aus Bioreaktoren in einer Kostenschere fest: Vor 2030–2035 wird es im Discounter nicht massenhaft billig zu kaufen sein.",
       "citizenTimeline": "Im normalen Supermarkt erst ab 2030–2035 realistisch",
       "content": "<p class=\"text-slate-300 text-xs mb-3 leading-relaxed\">Kultiviertes Fleisch besteht aus echten Tierstammzellen, die in Nährlösung heranwachsen. Doch die industrielle Massenproduktion steht vor immensen Hürden:</p><ul class=\"list-disc list-inside space-y-1 text-slate-300 text-xs mb-3 leading-relaxed\"><li><strong>Teure Wachstumsfaktoren:</strong> Nährmedien ohne Kälberserum (FBS) sind nach wie vor kostspielig.</li><li><strong>Bioreaktor-Engpass:</strong> Weltweit fehlen ausreichend sterile Fermentationskapazitäten für Fleischmassen.</li><li><strong>Politische Widerstände:</strong> Länder wie Italien und US-Bundesstaaten (Florida, Alabama) haben gesetzliche Verbote erlassen.</li></ul><p class=\"text-slate-300 text-xs leading-relaxed\"><strong>Aktuelle Verfügbarkeit:</strong> Lediglich in Singapur und bei limitierten Pop-ups in Israel und den USA gibt es Zulassungen für gehobene Restaurants.</p>",
-      "tags": ["#InVitroFleisch", "#ZelluläreLandwirtschaft", "#Kostenanalyse"],
+      "tags": [
+        "#InVitroFleisch",
+        "#ZelluläreLandwirtschaft",
+        "#Kostenanalyse"
+      ],
       "link": "https://gfi.org",
       "embedType": "none"
     },
@@ -132,7 +281,14 @@ window.INTEL_HUB_DATA = {
       "summary": "Die Analyse der israelischen Sicherheitsdoktrin: Warum die vollständige Zerschlagung von Terrorstrukturen in Gaza, die Zurückdrängung der Hisbollah im Norden und die Härte gegen Iran für Israels Überleben alternativlos sind.",
       "citizenTimeline": "Laufende Doktrin & dauerhafte Wachsamkeit",
       "content": "<h4 class=\"font-bold text-white text-base mb-2\">1. Die Geiselfrage: Höchste moralische Pflicht</h4><p class=\"text-slate-300 text-xs mb-3 leading-relaxed\">Die Befreiung der Verschleppten bleibt der Schmerzpunkt und die zentrale moralische Triebfeder des jüdischen Staates. Die militärische Führung betont, dass nur kompromissloser Druck auf die Terrororganisationen Verhandlungslösungen erzwingen kann, ohne künftige Entführungen zu belohnen.</p><h4 class=\"font-bold text-white text-base mb-2\">2. Gazastreifen & Philadelphi-Korridor</h4><p class=\"text-slate-300 text-xs mb-3 leading-relaxed\">Aus pro-israelischer Sicht ist jede künftige Übergangsordnung wertlos, wenn der Waffenschmuggel über die Grenze zu Ägypten wieder auflebt. Israels operative Sicherheitskontrolle und die Entmilitarisierung sind die elementaren Voraussetzungen, damit der 7. Oktober sich nie wiederholen kann.</p><h4 class=\"font-bold text-white text-base mb-2\">3. Die Nordgrenze: Sicherheit für 60.000 Evakuierte</h4><p class=\"text-slate-300 text-xs mb-3 leading-relaxed\">Die Zerschlagung der Radwan-Eliteeinheiten der Hisbollah und das Ausschalten der Führungsriege waren militärisch notwendig, um die Bewohner der nördlichen Kibbuzim und Städte vor ständigem Raketen- und Panzerabwehrbeschuss zu schützen. Ein Abkommen ist nur so viel wert wie Israels Fähigkeit, Verletzungen sofort mit Präzisionsschlägen zu beantworten.</p><h4 class=\"font-bold text-white text-base mb-2\">4. Iran & der Schutzschirm</h4><p class=\"text-slate-300 text-xs leading-relaxed\">Das mehrstufige Abwehrsystem (Iron Dome, David's Sling, Arrow 3) hat in Kombination mit der IAF und westlichen sowie arabischen Partnern der Abraham-Abkommen bewiesen, dass der ballistische Raketenterror des Mullah-Regimes gebrochen werden kann.</p>",
-      "tags": ["#Israel", "#IDF", "#Geiseln", "#Hisbollah", "#IronDome", "#Nahost"],
+      "tags": [
+        "#Israel",
+        "#IDF",
+        "#Geiseln",
+        "#Hisbollah",
+        "#IronDome",
+        "#Nahost"
+      ],
       "link": "https://www.idf.il/en/",
       "embedType": "none"
     },
@@ -150,7 +306,11 @@ window.INTEL_HUB_DATA = {
       "summary": "Trotz des massiven Propagandafeldzugs extremistischer Gruppen haben die diplomatischen und sicherheitspolitischen Bande mit den VAE, Bahrain und Marokko standgehalten.",
       "citizenTimeline": "Langfristige regionale Stabilität",
       "content": "<p class=\"text-slate-300 text-xs mb-3 leading-relaxed\">Die pragmatischen arabischen Staaten erkennen zunehmend, dass die größte Bedrohung für Wohlstand und Frieden nicht Israel ist, sondern die vom Iran finanzierten Stellvertreter-Milizen (Huthi, Hisbollah, schiitische Milizen im Irak).</p><p class=\"text-slate-300 text-xs leading-relaxed\">Gemeinsame Frühwarnsysteme, maritime Kooperationen im Roten Meer und Handelsbeziehungen signalisieren: Die Vision einer integrierten, fortschrittlichen Region bleibt lebendig.</p>",
-      "tags": ["#AbrahamAbkommen", "#Diplomatie", "#RegionalerFrieden"],
+      "tags": [
+        "#AbrahamAbkommen",
+        "#Diplomatie",
+        "#RegionalerFrieden"
+      ],
       "link": "https://jiss.org.il/en/",
       "embedType": "none"
     },
@@ -168,7 +328,12 @@ window.INTEL_HUB_DATA = {
       "summary": "Mike Winger führt seine beliebte Reihe \"10 Questions with Mike Winger\" fort (u. a. über interreligiösen Dialog nach einem Moscheebesuch mit einem Imam) und warnt vor modernen falschen Propheten.",
       "citizenTimeline": "Laufende Video-Veröffentlichungen & Bibelkommentare",
       "content": "<h4 class=\"font-bold text-white text-base mb-2\">Aktuelle Kerninhalte & Serien:</h4><ul class=\"list-disc list-inside space-y-1.5 text-slate-300 text-xs mb-3 leading-relaxed\"><li><strong>„10 Qs with Mike Winger“ (Ep. 80 & 81):</strong> Tiefenprüfungen ethischer Fragen (biblisches Richten vs. Verleumdung, Umgang mit säkularen Feiertagen wie Halloween, theologische Nuancen von Sünde und Identität in Christus).</li><li><strong>Moscheebesuch & Gespräch mit einem Imam:</strong> Differenzierter, sachlicher Bericht über interreligiöse Kontroversen und die Einzigartigkeit des Evangeliums.</li><li><strong>Entlarvung moderner Irrlehrer:</strong> Fortlaufende kritische Analysen über fragwürdige Wunderheiler, Wohlstandsevangelisten und die Dogmen des römischen Katholizismus.</li></ul><p class=\"text-slate-300 text-xs leading-relaxed\">Wingers Ansatz bleibt: Gründlich, texttreu, seelsorgerlich und ohne Rücksicht auf populäre Trends im Internet.</p>",
-      "tags": ["#MikeWinger", "#BibleThinker", "#Bibelauslegung", "#Apologetik"],
+      "tags": [
+        "#MikeWinger",
+        "#BibleThinker",
+        "#Bibelauslegung",
+        "#Apologetik"
+      ],
       "link": "https://www.youtube.com/@MikeWinger",
       "embedType": "video",
       "embedUrl": "https://www.youtube-nocookie.com/embed/videoseries?list=PLZ3iRMLzFlHsHyvMtfgOgSPU6zMlC26bm"
@@ -187,7 +352,12 @@ window.INTEL_HUB_DATA = {
       "summary": "Ortlund stellt sein Buch \"Why Christianity Makes Sense\" vor, erforscht die menschliche Sehnsucht nach C.S. Lewis und setzt Maßstäbe für christliche Debattenkultur (\"The Art of Disagreeing\").",
       "citizenTimeline": "Regelmäßige theologische Essays & Analysen",
       "content": "<h4 class=\"font-bold text-white text-base mb-2\">Schwerpunkte bei Truth Unites:</h4><ul class=\"list-disc list-inside space-y-1.5 text-slate-300 text-xs mb-3 leading-relaxed\"><li><strong>Kulturelle Apologetik & C.S. Lewis:</strong> Warum die tiefste Sehnsucht des Menschen (Sehnsucht) ein starker Hinweis auf den Schöpfer ist.</li><li><strong>Theologiegeschichte & Kirchenväter:</strong> Dialoge und historische Vergleiche zwischen Protestantismus, Katholizismus und Orthodoxie (u. a. Heiligenverehrung, Schriftenverständnis).</li><li><strong>Giftige Online-Kultur überwinden:</strong> Wie Christen auch bei scharfen theologischen Differenzen respektvoll und biblisch fundiert miteinander reden können.</li></ul>",
-      "tags": ["#GavinOrtlund", "#TruthUnites", "#Kirchengeschichte", "#CSLewis"],
+      "tags": [
+        "#GavinOrtlund",
+        "#TruthUnites",
+        "#Kirchengeschichte",
+        "#CSLewis"
+      ],
       "link": "https://www.youtube.com/@TruthUnites",
       "embedType": "none"
     },
@@ -205,7 +375,13 @@ window.INTEL_HUB_DATA = {
       "summary": "Michael Jones und Co-Host Than brillieren mit logischen Abhandlungen zum sogenannten „Islamischen Dilemma“, exegetischen Beweisen der Trinität und alttestamentlicher Kosmologie.",
       "citizenTimeline": "Umfangreiche Whiteboard-Animationen & Live-Streams",
       "content": "<h4 class=\"font-bold text-white text-base mb-2\">Die aktuellen Kernprojekte von IP:</h4><p class=\"text-slate-300 text-xs mb-2 leading-relaxed\"><strong>Das Islamische Dilemma:</strong> Jones zeigt in Debatten (u. a. gegen Jake Brancatella), dass der Koran behauptet, Tora und Evangelium seien unverfälschtes Wort Gottes. Bestätigt der Koran die Bibel, widerlegt die Bibel jedoch Mohammeds Kernaussagen. Behauptet der Muslim, die Bibel sei verfälscht, widerspricht er dem Koran. Ein logischer Zirkel, der online Millionen erreicht.</p><p class=\"text-slate-300 text-xs mb-2 leading-relaxed\"><strong>Than Christopoulos:</strong> Unterstützt die Recherche, leitet Q&A-Streams und arbeitet an den Schriften zum Theodizee-Problem (Warum lässt Gott Leid zu?).</p><p class=\"text-slate-300 text-xs leading-relaxed\"><strong>Agnostiker finden zum Glauben:</strong> Jones analysiert die jüngste Konversion bekannter säkularer Denker (wie Joe Schmid / Majesty of Reason) zum christlichen Glauben.</p>",
-      "tags": ["#InspiringPhilosophy", "#MichaelJones", "#Than", "#IslamDilemma", "#Trinität"],
+      "tags": [
+        "#InspiringPhilosophy",
+        "#MichaelJones",
+        "#Than",
+        "#IslamDilemma",
+        "#Trinität"
+      ],
       "link": "https://www.youtube.com/@InspiringPhilosophy",
       "embedType": "none"
     },
@@ -223,7 +399,12 @@ window.INTEL_HUB_DATA = {
       "summary": "Wes Huff verteidigt die Texttreue des Neuen Testaments in wissenschaftlichen Vorlesungsreihen und erreicht mit seinem Auftritt bei Steven Bartlett (Diary of a CEO) ein säkulares Weltpublikum.",
       "citizenTimeline": "Viraler Aufstieg historischer Bibelverteidigung",
       "content": "<p class=\"text-slate-300 text-xs mb-3 leading-relaxed\">Wes Huff stellt sich den Thesen liberaler Bibelkritiker wie Bart Ehrman und beweist anhand ältester Papyrus- und Kodex-Funde, dass die Überlieferungskette des Neuen Testaments die historisch am besten belegte Antikschrift überhaupt ist.</p><p class=\"text-slate-300 text-xs leading-relaxed\">Zudem teilt er seine persönliche Lebensgeschichte: Das Aufwachsen im Nahen Osten und seine dokumentierte Genesung von plötzlicher Kinderlähmung im Alter von elf Jahren.</p>",
-      "tags": ["#WesHuff", "#DiaryOfACEO", "#Manuskripte", "#Auferstehung"],
+      "tags": [
+        "#WesHuff",
+        "#DiaryOfACEO",
+        "#Manuskripte",
+        "#Auferstehung"
+      ],
       "link": "https://www.youtube.com/@WesHuff",
       "embedType": "none"
     },
@@ -241,7 +422,13 @@ window.INTEL_HUB_DATA = {
       "summary": "Erik Manning (Testify) beweist die Augenzeugenqualität der Evangelien durch \"Undesigned Coincidences\", während Melissa Dougherty mit ihrem Buch \"Happy Lies\" esoterische Scheinwahrheiten im christlichen Gewand entlarvt.",
       "citizenTimeline": "Wöchentliche Video-Uploads",
       "content": "<h4 class=\"font-bold text-white text-base mb-2\">Testify (Erik Manning):</h4><p class=\"text-slate-300 text-xs mb-3 leading-relaxed\">Manning zeigt subtile historische Puzzleteile auf: Warum erwähnt Johannes beiläufig „vier Soldaten und ein Gewand“ bei der Kreuzigung? Warum deckt sich das exakt mit dem römischen Militärrecht der Antike? Solche unkonstruierten Details belegen die Augenzeugenschaft gegen skeptische Mythen-Thesen.</p><h4 class=\"font-bold text-white text-base mb-2\">Melissa Dougherty:</h4><p class=\"text-slate-300 text-xs leading-relaxed\">Mit Humor und scharfer theologischer Klinge analysiert sie, wie „New Thought“-Konzepte (Law of Attraction, Wohlstandsglaube, egozentrische Spiritualität) christliche Gemeinden infiltrieren. Ihr Buch <em>Happy Lies</em> gehört zu den einflussreichsten Werken moderner Kulturapologetik.</p>",
-      "tags": ["#Testify", "#ErikManning", "#MelissaDougherty", "#NewAgeKritik", "#Evangelien"],
+      "tags": [
+        "#Testify",
+        "#ErikManning",
+        "#MelissaDougherty",
+        "#NewAgeKritik",
+        "#Evangelien"
+      ],
       "link": "https://www.youtube.com/@TestifyApologetics",
       "embedType": "none"
     },
@@ -259,14 +446,16 @@ window.INTEL_HUB_DATA = {
       "summary": "Analytische Präzision aus einer Familie: Lydia McGrew verteidigt die historische Zuverlässigkeit der Evangelien, Timothy McGrew beweist Wunder mit Bayes-Wahrscheinlichkeiten, und Bethel McGrew analysiert den säkularen Zeitgeist.",
       "citizenTimeline": "Bücher, Substack \"Further Up\" & Fachaufsätze",
       "content": "<div class=\"space-y-2 text-xs\"><div class=\"p-2.5 rounded bg-surface-850 border border-slate-800\"><strong class=\"text-purple-300\">Dr. Lydia McGrew:</strong><br/>Kritisiert literarische „Fiktionalisierungs-Theorien“ auch innerhalb evangelikaler Kreise. Sie belegt in Büchern und Podcasts, dass die Evangelisten geschichtliche Fakten berichten wollten und keine dramaturgischen Erfindungen machten.</div><div class=\"p-2.5 rounded bg-surface-850 border border-slate-800\"><strong class=\"text-purple-300\">Dr. Timothy McGrew:</strong><br/>Philosophie-Professor und Meister des Bayes-Theorems. Seine Arbeiten zur Wahrscheinlichkeitsrechnung beweisen, dass Wunderberichte bei solider Zeugenschaft mathematisch hochplausibel sind.</div><div class=\"p-2.5 rounded bg-surface-850 border border-slate-800\"><strong class=\"text-purple-300\">Bethel McGrew (Substack <em>Further Up</em>):</strong><br/>Schreibt brillante Kolumnen für <em>WORLD</em>, <em>Compact</em> und <em>The Lamp</em> zur Verteidigung christlicher Kultur, Bildung und Kunst im Zeitalter der digitalen Zerstreuung.</div></div>",
-      "tags": ["#LydiaMcGrew", "#TimothyMcGrew", "#BethelMcGrew", "#Bayes", "#Erkenntnistheorie"],
+      "tags": [
+        "#LydiaMcGrew",
+        "#TimothyMcGrew",
+        "#BethelMcGrew",
+        "#Bayes",
+        "#Erkenntnistheorie"
+      ],
       "link": "https://lydiamcgrew.com",
       "embedType": "none"
     },
-
-    // =============================================================
-    // ARCHIV: FRÜHERE MELDUNGEN & HISTORISCHE ENTWICKLUNGEN
-    // =============================================================
     {
       "id": "archive-perowskit-2023",
       "category": "perowskit",
@@ -281,7 +470,11 @@ window.INTEL_HUB_DATA = {
       "summary": "Rückblick: Der historische Moment, als Perowskit-Tandemzellen zum ersten Mal bewiesen, dass sie die theoretische Grenze von reinem Silizium im Dauertest übertreffen können.",
       "citizenTimeline": "Grundlagenphase vor industriellem Hochlauf",
       "content": "<p class=\"text-slate-300 text-xs mb-3 leading-relaxed\">Dieser historische Meilenstein zeigte erstmals, dass Tandem-Strukturen stabil über 1.000 Stunden betrieben werden konnten. Dies war das wissenschaftliche Fundament für die heutigen kommerziellen Fabriken in Brandenburg und China.</p>",
-      "tags": ["#Archiv", "#Perowskit", "#Geschichte"],
+      "tags": [
+        "#Archiv",
+        "#Perowskit",
+        "#Geschichte"
+      ],
       "link": "https://www.helmholtz-berlin.de",
       "embedType": "none"
     },
@@ -299,7 +492,11 @@ window.INTEL_HUB_DATA = {
       "summary": "Die Vorgänger-Technologie: Bevor 2023 das schnellere 3D Gaussian Splatting erfunden wurde, benötigten Neural Radiance Fields (NeRF) noch Stunden für das Rendern einer einzigen Szene.",
       "citizenTimeline": "Vorgänger-Generation von 3DGS",
       "content": "<p class=\"text-slate-300 text-xs mb-3 leading-relaxed\">NeRFs revolutionierten das Konzept der Tiefenrekonstruktion, waren jedoch für Laien zu rechenintensiv. Erst die Entdeckung von Gaussian Splats machte 3D-Scanning in Sekunden auf Smartphones wie mit Scaniverse möglich.</p>",
-      "tags": ["#Archiv", "#NeRF", "#3DGS-Ursprung"],
+      "tags": [
+        "#Archiv",
+        "#NeRF",
+        "#3DGS-Ursprung"
+      ],
       "link": "https://matthewmildenhall.github.io/nerf/",
       "embedType": "none"
     },
@@ -317,7 +514,12 @@ window.INTEL_HUB_DATA = {
       "summary": "Der globale Startschuss: Eat Just erhielt in Singapur die Genehmigung, im Labor kultiviertes Hähnchenfleisch in einem Privatclub namens 1880 an Gäste zu servieren.",
       "citizenTimeline": "Erste historische Zulassung weltweit",
       "content": "<p class=\"text-slate-300 text-xs mb-3 leading-relaxed\">Damals kostete ein einzelner Hühnchen-Nugget noch Hunderte Dollar in der Herstellung. Obwohl seither sechs Jahre vergangen sind, verdeutlicht dieser Rückblick, wie anspruchsvoll die Skalierung auf Supermarktpreise bis heute bleibt.</p>",
-      "tags": ["#Archiv", "#Singapur", "#EatJust", "#Zulassung"],
+      "tags": [
+        "#Archiv",
+        "#Singapur",
+        "#EatJust",
+        "#Zulassung"
+      ],
       "link": "https://goodmeat.co",
       "embedType": "none"
     }
