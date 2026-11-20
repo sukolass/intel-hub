@@ -2,10 +2,61 @@
 // Diese Datei wird bei jeder Aktualisierung automatisch um neue Funde, Zusammenfassungen und Videos erweitert.
 
 window.INTEL_HUB_DATA = {
-  "lastUpdated": "2026-11-20T16:00:57.115383",
+  "lastUpdated": "2026-11-21T00:50:50.494791",
   "version": "1.1.0",
   "hubName": "Personal Intel & Apologetics Hub",
   "articles": [
+    {
+      "id": "israel-davids-sling-bureij-liberman-2026",
+      "category": "israel",
+      "archived": false,
+      "title": "David’s Sling für Dauerangriffe aufgerüstet, Hamas-Zelle in Bureij getroffen & Iran-Debatte",
+      "source": "Times of Israel, Jerusalem Post & Bloomberg",
+      "author": "Bloomberg / Times of Israel / JPost",
+      "date": "20. Nov 2026",
+      "badge": "Luftabwehr & Gaza-Einsatz",
+      "badgeColor": "blue",
+      "readTime": "4 Min. Lesezeit",
+      "summary": "Laut Bloomberg- und Times-of-Israel-Berichten vom 20. November 2026 hat Israel das Luftabwehrsystem David’s Sling anhand realer Gefechtsdaten gegen Iran aufgerüstet, um teurere Arrow-3-Abfangraketen zu schonen. Zudem traf die IDF in Bureij (Zentral-Gaza) eine Hamas-Führungsrunde inklusive Nukhba-Terroristen.",
+      "citizenTimeline": "Mehrschichtige Luftabwehr gestärkt; gezielte Bedrohungsabwehr in Zentral-Gaza und Westjordanland",
+      "content": "<h4 class=\"font-bold text-white text-base mb-2\">1. David’s Sling: Upgrade auf Basis iranischer Raketensalven</h4>\n<p class=\"text-slate-300 text-xs mb-3 leading-relaxed\">Wie <em>Bloomberg</em> und die <em>Times of Israel</em> am 20. November 2026 berichteten, hat Israel das von Rafael und RTX entwickelte Mittelstrecken-Luftabwehrsystem <strong>David’s Sling</strong> umfassend modernisiert. Anhand realer Einsatzdaten aus früheren iranischen Raketenangriffen schließt das Update erkannte Lücken im Abwehrschirm, erweitert das Spektrum abfangbarer ballistischer Bedrohungen sowie Drohnen und rüstet das System für wochenlange Dauerangriffe.</p>\n<div class=\"space-y-2 text-xs mb-3\">\n<div class=\"p-2.5 rounded bg-surface-850 border border-slate-800\"><strong class=\"text-blue-400\">Schonung der Arrow-3-Bestände:</strong> Da ein <em>Stunner</em>-Abfangflugkörper von David’s Sling rund <strong>1 Mio. USD</strong> kostet, entlastet das Upgrade die deutlich teureren und knapperen Langstrecken-Abfangraketen vom Typ <strong>Arrow 3</strong> (über 2,5 bis 3 Mio. USD pro Stück) für exoatmosphärische Bedrohungen.</div>\n<div class=\"p-2.5 rounded bg-surface-850 border border-slate-800\"><strong class=\"text-blue-400\">Schlag gegen Hamas-Kommandeure in Bureij (20. Nov.):</strong> In Zentral-Gaza traf ein gezielter IDF-Luftschlag ein Treffen von Hamas-Aktivisten – darunter Mitglieder der Nukhba-Elitetruppe und Beteiligte am 7. Oktober –, die Anschläge gegen Truppen und Zivilisten planten. Palästinensische Medien meldeten vier Tote.</div>\n<div class=\"p-2.5 rounded bg-surface-850 border border-slate-800\"><strong class=\"text-blue-400\">Beit El &amp; Knesset-Debatte zu Iran:</strong> Nahe Beit El (Westjordanland) erschoss ein ziviler Sicherheitskoordinator nach Warnschüssen einen von zwei Verdächtigen, ein zweiter wurde festgenommen; die IDF prüft den Vorfall. Unterdessen erklärte der neue Vorsitzende des Knesset-Außen- und Verteidigungsausschusses, <em>Avigdor Liberman</em>, nach Geheimdienst-Briefings gebe es derzeit keine akute Sicherheitsrechtfertigung für einen unmittelbaren Präventivschlag gegen Iran.</div>\n</div>",
+      "tags": [
+        "#Israel",
+        "#DavidsSling",
+        "#Arrow3",
+        "#Luftabwehr",
+        "#IDF",
+        "#Gaza",
+        "#Iran"
+      ],
+      "link": "https://www.timesofisrael.com",
+      "embedType": "none"
+    },
+    {
+      "id": "photogrammetrie-gs-vton-mvt-3dgs-2026",
+      "category": "photogrammetrie",
+      "archived": false,
+      "title": "GS-VTON-MVT: Geometriegeführte Multi-View-Bearbeitung für konsistente 3D-Gaussian-Splats",
+      "source": "arXiv (2611.25979) & Radiance Fields",
+      "author": "Sarthak Batra, Armin Mustafa, Adrian Hilton",
+      "date": "20. Nov 2026",
+      "badge": "3DGS-Forschung",
+      "badgeColor": "cyan",
+      "readTime": "3 Min. Lesezeit",
+      "summary": "Am 20. November 2026 erschien mit GS-VTON-MVT (arXiv:2611.25979) ein neues 3D-Gaussian-Splatting-Framework für konsistentes virtuelles Anprobieren und Avatar-Editing. Tiefen- und Normalenkarten direkt aus dem 3DGS-Zustand verhindern Textur-Drift und Verzerrungen bei Blickwinkelwechseln.",
+      "citizenTimeline": "Forschungspaper veröffentlicht; verbessert künftige 3DGS-Editing- und Avatar-Pipelines",
+      "content": "<h4 class=\"font-bold text-white text-base mb-2\">1. Schluss mit Textur-Drift bei 3DGS-Bearbeitungen</h4>\n<p class=\"text-slate-300 text-xs mb-3 leading-relaxed\">Herkömmliche 3D-Editing- und Virtual-Try-On-Verfahren auf Basis von <strong>3D Gaussian Splatting (3DGS)</strong> bearbeiten Trainingsansichten oft isoliert und verschmelzen sie per Heuristik – was in neuen Kameraperspektiven zu unscharfen Texturen und geometrischen Artefakten führt. Das am 20. November 2026 auf <em>arXiv</em> und <em>Radiance Fields</em> vorgestellte Framework <strong>GS-VTON-MVT</strong> (<em>Multi-View Transformer with Geometry-Guided Multi-Modal ControlNet</em>) löst dieses Konsistenzproblem dreistufig.</p>\n<div class=\"space-y-2 text-xs mb-3\">\n<div class=\"p-2.5 rounded bg-surface-850 border border-slate-800\"><strong class=\"text-cyan-400\">Drei Kernbausteine:</strong> Ein <em>Multi-View Inpainting Transformer</em> bearbeitet Trainingsansichten gemeinsam per Cross-View Self-Attention. Ein <em>Geometry-Guided Multi-Modal ControlNet</em> konditioniert das Diffusionsmodell sowohl auf das Zielkleidungsstück als auch auf Tiefen- und Oberflächennormalenkarten direkt aus dem aktuellen 3DGS-Zustand.</div>\n<div class=\"p-2.5 rounded bg-surface-850 border border-slate-800\"><strong class=\"text-cyan-400\">Pose-Adaptive Attention &amp; Benchmark:</strong> Dynamische, kameraposenabhängige Gewichtungen (<em>Pose-Adaptive Persona-Aware Attention</em>) ersetzen starre Mischwerte und erzielen auf <em>3D-VTONBench</em> deutliche Zugewinne bei FID, KID, LPIPS-Konsistenz und Nutzerpräferenz.</div>\n</div>",
+      "tags": [
+        "#GaussianSplatting",
+        "#3DGS",
+        "#GS_VTON_MVT",
+        "#ControlNet",
+        "#3DEditing",
+        "#arXiv"
+      ],
+      "link": "https://arxiv.org/abs/2611.25979",
+      "embedType": "none"
+    },
     {
       "id": "perowskit-jinkosolar-3524-waseda-helical-2026",
       "category": "perowskit",
