@@ -2,10 +2,89 @@
 // Diese Datei wird bei jeder Aktualisierung automatisch um neue Funde, Zusammenfassungen und Videos erweitert.
 
 window.INTEL_HUB_DATA = {
-  "lastUpdated": "2026-11-22T02:50:06.487364",
+  "lastUpdated": "2026-11-23T00:51:18.864891",
   "version": "1.1.0",
   "hubName": "Personal Intel & Apologetics Hub",
   "articles": [
+    {
+      "id": "israel-aman-warning-zamir-trump-2026-11-22",
+      "category": "israel",
+      "archived": false,
+      "title": "Aman warnt vor Mehrfrontenkrieg bei Iran-Alleingang; Zamir fordert Truppenstärkung & Trump erhöht Druck",
+      "source": "Times of Israel, Channel 12 & IDF",
+      "author": "IDF / Times of Israel / Channel 12",
+      "date": "22. Nov 2026",
+      "badge": "Iran-Strategie & Gaza-Lage",
+      "badgeColor": "blue",
+      "readTime": "4 Min. Lesezeit",
+      "summary": "Am 22. November 2026 berichteten israelische Medien über eine vertrauliche Warnung des IDF-Militärgeheimdienstes (Aman) an Netanjahu: Ein Alleingang gegen Iran könne einen Mehrfrontenkrieg mit Libanon, Syrien und Gaza auslösen. Zugleich betonte Generalstabschef Eyal Zamir den fortgesetzten Druck auf Hamas, während Präsident Trump Iran bis Jahresende eine Frist setzte.",
+      "citizenTimeline": "Hohe militärische Wachsamkeit; Abstimmung zwischen IDF und US-CENTCOM sowie laufende Anti-Terror-Einsätze",
+      "content": "<h4 class=\"font-bold text-white text-base mb-2\">1. Iran-Risikoanalyse: Aman-Warnung &amp; US-Abstimmung (22. Nov.)</h4>\n<p class=\"text-slate-300 text-xs mb-3 leading-relaxed\">Laut Berichten von <em>Channel 12</em> und der <em>Times of Israel</em> vom 22. November 2026 warnten Vertreter des israelischen Militärgeheimdienstes (<strong>Aman</strong>) Premierminister Benjamin Netanjahu in einer geschlossenen Sitzung: Ein unilateraler israelischer Militärschlag gegen Iran berge das Risiko eines verheerenden <strong>Mehrfrontenkriegs</strong>, in den auch Libanon, Syrien und der Gazastreifen hineingezogen würden. Damit widersprach Aman Erwartungen Netanjahus und von Mossad-Chef Roman Gofman, eine Operation lasse sich auf drei bis fünf Tage begrenzen.</p>\n<div class=\"space-y-2 text-xs mb-3\">\n<div class=\"p-2.5 rounded bg-surface-850 border border-slate-800\"><strong class=\"text-blue-400\">US-Präsident Trump &amp; CENTCOM:</strong> Parallel zur laufenden Einsatzplanung zwischen IDF und US-CENTCOM warnte US-Präsident <em>Donald Trump</em> am 22. November auf Truth Social, Iran habe nach den US-Zwischenwahlen seine Drohnen- und Raketenangriffe verschärft; ohne Abkommen bis Jahresende sei er zu einer erneuten Offensive geneigt.</div>\n</div>\n<h4 class=\"font-bold text-white text-base mb-2\">2. Gaza, Nordgrenze &amp; Westjordanland</h4>\n<div class=\"space-y-2 text-xs mb-3\">\n<div class=\"p-2.5 rounded bg-surface-850 border border-slate-800\"><strong class=\"text-blue-400\">Generalstabschef Zamir &amp; PIJ-Schlag in Gaza:</strong> Bei einer Übung des Südkommandos erklärte IDF-Generalstabschef Generalleutnant <em>Eyal Zamir</em> am 22. November, die Armee verfolge konsequent verbleibende Hamas-Kommandeure, benötige angesichts der Dauerbelastung jedoch zusätzliche Truppenressourcen. Zudem identifizierte die IDF die Getöteten eines präzisen Schlags in Gaza-Stadt als PIJ-Terroristen, darunter Pionierkommandeur <em>Ahmad Badran Nimer Sawafiri</em>.</div>\n<div class=\"p-2.5 rounded bg-surface-850 border border-slate-800\"><strong class=\"text-blue-400\">Libanon-Proteste &amp; Westjordanland:</strong> Libanons Führung protestierte am 22. November gegen ein Social-Media-Video einer IDF-Sprecherin aus einer südlíbanischen Sicherheitszonen-Gemeinde. In Israel verurteilten Politiker über Parteigrenzen hinweg (u. a. Gideon Sa'ar, Avi Dichter und Gadi Eisenkot) nächtliche Brandstiftungen extremistischer Siedler in Dörfern bei Ramallah (Deir al-Sudan, Deir Abu Mash'al, Kafr Malik); Sicherheitskräfte ermitteln.</div>\n</div>",
+      "tags": [
+        "#Israel",
+        "#IDF",
+        "#Aman",
+        "#Iran",
+        "#EyalZamir",
+        "#Gaza",
+        "#CENTCOM",
+        "#Sicherheit"
+      ],
+      "link": "https://www.timesofisrael.com",
+      "embedType": "none"
+    },
+    {
+      "id": "apologetik-winger-ep85-psalm119-ip-2026-11-22",
+      "category": "apologetik",
+      "archived": false,
+      "title": "Mike Winger (Ep. 85 & Psalm 119): Umgang mit Wes Huffs Geständnis + InspiringPhilosophy Call-In",
+      "source": "YouTube (@MikeWinger & @InspiringPhilosophy) / BibleThinker",
+      "author": "Mike Winger / Michael Jones (InspiringPhilosophy)",
+      "date": "22. Nov 2026",
+      "badge": "Video-Neuheiten",
+      "badgeColor": "purple",
+      "readTime": "3 Min. Lesezeit",
+      "summary": "Mike Winger (BibleThinker) veröffentlichte am 21. November 2026 Episode 85 seiner Reihe „10 Qs“ („Wes Huff Confessed. What do we do now?“) über Buße, Rechenschaft und Wahrheitstreue in der Apologetik sowie am 22. November „Psalm 119 Explained“. Zudem streamte InspiringPhilosophy am 20. November eine Live-Call-In-Debatte.",
+      "citizenTimeline": "Neue Episoden und Streams vom 20.–22. November 2026 verfügbar",
+      "content": "<h4 class=\"font-bold text-white text-base mb-2\">1. Mike Winger (21.–22. Nov.): Ep. 85 zu Wes Huff &amp; Psalm 119</h4>\n<div class=\"space-y-2 text-xs mb-3\">\n<div class=\"p-2.5 rounded bg-surface-850 border border-slate-800\"><strong class=\"text-purple-400\">10 Qs with Mike Winger (Ep. 85, 21. Nov.):</strong> Unter dem Titel <em>„Wes Huff Confessed. What do we do now?“</em> beantwortet Winger zentrale Zuschauerfragen nach Wes Huffs öffentlichem Plagiatsgeständnis und Rückzug vom Dienst – mit Fokus auf biblische Buße, institutionelle Rechenschaftspflicht, Wahrheit vor Loyalität und Schutz der Glaubwürdigkeit christlicher Apologetik.</div>\n<div class=\"p-2.5 rounded bg-surface-850 border border-slate-800\"><strong class=\"text-purple-400\">„Psalm 119 Explained“ (22. Nov.):</strong> Ergänzend erschien eine neue Bibelauslegung Wingers über Aufbau, Themen und Bedeutung von Psalm 119 für die Wertschätzung des Wortes Gottes.</div>\n</div>\n<h4 class=\"font-bold text-white text-base mb-2\">2. InspiringPhilosophy &amp; Kanal-Check</h4>\n<p class=\"text-slate-300 text-xs leading-relaxed\"><strong>Michael Jones (InspiringPhilosophy)</strong> führte am 20. November 2026 zudem den Livestream <em>„LIVE CALL IN-SHOW: Christianity is the True Religion!“</em> mit Anrufern und nicht-christlichen Gesprächspartnern durch. Auf den Kanälen von <strong>Gavin Ortlund</strong> (Truth Unites), <strong>Testify</strong> (Erik Manning), <strong>Melissa Dougherty</strong>, <strong>Wes Huff</strong> sowie <strong>Lydia, Timothy und Bethel McGrew</strong> wurden am 21.–22. November 2026 keine weiteren neuen Einzelvideos verzeichnet.</p>",
+      "tags": [
+        "#MikeWinger",
+        "#BibleThinker",
+        "#WesHuff",
+        "#Psalm119",
+        "#InspiringPhilosophy",
+        "#Apologetik",
+        "#YouTube"
+      ],
+      "link": "https://www.youtube.com/@MikeWinger",
+      "embedType": "none"
+    },
+    {
+      "id": "photogrammetrie-quicksplat-v04-facetslam-agsr-2026-11-22",
+      "category": "photogrammetrie",
+      "archived": false,
+      "title": "QuickSplat v0.4.0 bringt Leertasten-3DGS-Vorschau für Explorer & Finder; Facet-SLAM & AGSR auf arXiv",
+      "source": "Radiance Fields & arXiv",
+      "author": "Gabriele Verga / NTU / Universität Klagenfurt / ETRI",
+      "date": "22. Nov 2026",
+      "badge": "Offline-Viewer & Splat-to-Mesh",
+      "badgeColor": "cyan",
+      "readTime": "4 Min. Lesezeit",
+      "summary": "Das auf Radiance Fields vorgestellte Offline-Tool QuickSplat v0.4.0 macht 3D-Gaussian-Splats direkt per Leertaste im Windows Explorer und macOS Finder drehbar sichtbar (.ply, .spz, .sog, .splat, .ksplat). Neue November-Preprints wie Facet-SLAM (Triangle Splatting), AGSR und PaveSplat verbessern zudem Mesh-Geometrie und Schärfe.",
+      "citizenTimeline": "QuickSplat v0.4.0 direkt lokal für Windows & macOS nutzbar; neue Splat-to-Mesh-Forschung",
+      "content": "<h4 class=\"font-bold text-white text-base mb-2\">1. QuickSplat v0.4.0: Sofort-Vorschau für Laien &amp; Profis im Dateimanager</h4>\n<p class=\"text-slate-300 text-xs mb-3 leading-relaxed\">Wer viele lokale Scans aus <em>Scaniverse</em>, <em>Luma</em> oder <em>Jawset Postshot</em> verwaltet, musste bislang für jede Datei einen schweren 3D-Viewer oder Webbrowser öffnen. <strong>QuickSplat v0.4.0</strong> von Entwickler Gabriele Verga (vorgestellt auf <em>Radiance Fields</em>) integriert eine orbitierbare 3D-Offline-Vorschau direkt in die <strong>Leertasten-Schnellansicht</strong> von <strong>Windows Explorer</strong> (als QuickLook-Plugin via Edge WebView2) und <strong>macOS Finder</strong> (native Quick-Look-Erweiterung plus Standalone-App).</p>\n<div class=\"space-y-2 text-xs mb-3\">\n<div class=\"p-2.5 rounded bg-surface-850 border border-slate-800\"><strong class=\"text-cyan-400\">Formate &amp; Tempo:</strong> Unterstützt werden <code>.ply</code> (inkl. SuperSplat-Kompression sowie dünner COLMAP-/Metashape-Punktwolken mit Punktgrößen-Regler), <code>.spz</code>, <code>.sog</code>, <code>.splat</code> und <code>.ksplat</code> auf Basis von Three.js und World Labs' <em>Spark</em>-Renderer. Durch Vorab-Auslesen des PLY-Headers öffnen Dateien nahezu verzögerungsfrei – inklusive Info-Panel (Splat-Zahl, SH-Grad), Up-Axis-Toggle und Smart-Framing gegen Floater.</div>\n</div>\n<h4 class=\"font-bold text-white text-base mb-2\">2. Splat-to-Mesh &amp; Schärfe: Facet-SLAM, AGSR &amp; PaveSplat</h4>\n<div class=\"space-y-2 text-xs mb-3\">\n<div class=\"p-2.5 rounded bg-surface-850 border border-slate-800\"><strong class=\"text-cyan-400\">Facet-SLAM (NTU) &amp; Oberflächen-Splats:</strong> Neue November-Papers adressieren typische 3DGS-Grenzen: <em>Facet-SLAM</em> ersetzt klassische Punkte/Ellipsoide durch Echtzeit-Triangle-Splatting für RGB-D-Kameras und liefert direkt triangulierte Meshes. <em>AGSR</em> (Universität Klagenfurt, MMSP 2026 Best Paper) schärft bestehende 3DGS-Szenen per Multi-Aperture-Super-Resolution nach, während <em>PaveSplat</em> (ETRI) Löcher beim Hochskalieren durch oberflächenausgerichtete Kovarianzen vermeidet.</div>\n</div>",
+      "tags": [
+        "#GaussianSplatting",
+        "#QuickSplat",
+        "#3DGS",
+        "#FacetSLAM",
+        "#SplatToMesh",
+        "#AGSR",
+        "#RadianceFields"
+      ],
+      "link": "https://radiancefields.com",
+      "embedType": "none"
+    },
     {
       "id": "israel-pij-tel-al-hawa-aoun-hormuz-2026",
       "category": "israel",
