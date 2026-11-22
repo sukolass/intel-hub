@@ -2,10 +2,38 @@
 // Diese Datei wird bei jeder Aktualisierung automatisch um neue Funde, Zusammenfassungen und Videos erweitert.
 
 window.INTEL_HUB_DATA = {
-  "lastUpdated": "2026-11-21T00:50:50.494791",
+  "lastUpdated": "2026-11-22T02:50:06.487364",
   "version": "1.1.0",
   "hubName": "Personal Intel & Apologetics Hub",
   "articles": [
+    {
+      "id": "israel-pij-tel-al-hawa-aoun-hormuz-2026",
+      "category": "israel",
+      "archived": false,
+      "title": "Gaza: IDF schaltet als Helfer getarnte PIJ-Zelle aus; Libanon rügt Iran; Bahrain & Straße von Hormus unter Beschuss",
+      "source": "Times of Israel, Jerusalem Post, IDF & gCaptain",
+      "author": "IDF / Times of Israel / JPost / UKMTO",
+      "date": "21. Nov 2026",
+      "badge": "Gaza, Libanon & Golf-Sicherheit",
+      "badgeColor": "blue",
+      "readTime": "4 Min. Lesezeit",
+      "summary": "Am 21. November 2026 eliminierte die IDF in Tel al-Hawa (Gaza-Stadt) drei PIJ-Terroristen, die sich fälschlich als humanitäre Helfer tarnten (WCK bestätigte fehlende Zugehörigkeit). Zugleich wies Libanons Präsident Joseph Aoun iranische Einmischung scharf zurück, während Iran Anlagen in Bahrain und Tanker nahe der Straße von Hormus attackierte.",
+      "citizenTimeline": "Gezielte Terrorabwehr gegen Missbrauch humanitärer Tarnung in Gaza; verschärfte Golf- und Libanon-Lage",
+      "content": "<h4 class=\"font-bold text-white text-base mb-2\">1. Gaza-Stadt (21. Nov.): PIJ-Zelle unter humanitärer Tarnung getroffen</h4>\n<p class=\"text-slate-300 text-xs mb-3 leading-relaxed\">Am 21. November 2026 führte die israelische Luftwaffe im Stadtteil <strong>Tel al-Hawa</strong> (Gaza-Stadt) einen gezielten Schlag gegen ein Fahrzeug mit drei Terroristen des <strong>Palästinensischen Islamischen Dschihad (PIJ)</strong> durch. Laut IDF transportierten die Bewaffneten Versorgungsgüter für andere Kämpfer und gaben sich dabei fälschlich als humanitäre Helfer aus. Die Hilfsorganisation <strong>World Central Kitchen (WCK)</strong> bestätigte in einer eigenen Erklärung, dass weder das Fahrzeug noch die Insassen mit WCK verbunden waren, auch wenn ein Fahrer früher für die Organisation tätig gewesen sei.</p>\n<h4 class=\"font-bold text-white text-base mb-2\">2. Libanon, Bahrain &amp; Straße von Hormus (21.–22. Nov.)</h4>\n<div class=\"space-y-2 text-xs mb-3\">\n<div class=\"p-2.5 rounded bg-surface-850 border border-slate-800\"><strong class=\"text-blue-400\">Libanons Präsident Joseph Aoun gegen Iran-Einfluss:</strong> Am Vorabend des 83. libanesischen Unabhängigkeitstags richtete Präsident <em>Joseph Aoun</em> am 21. November eine deutliche Warnung an Teheran: Iran habe kein Recht, sich in innere Entscheidungen Libanons einzumischen oder nicht-staatliche Akteure zu steuern; die Ära von Waffen außerhalb staatlicher Kontrolle sei vorbei. Parallel lehnt Israel europäisch-französische Pläne für eine 2.000 bis 5.000 Mann starke Truppe als UNIFIL-Nachfolge ab Ende Dezember 2026 mit Vorbehalten ab.</div>\n<div class=\"p-2.5 rounded bg-surface-850 border border-slate-800\"><strong class=\"text-blue-400\">Iranischer Beschuss auf Bahrain:</strong> Bahrain meldete am 21./22. November iranische Drohnen- und Raketenangriffe; die Luftabwehr fing mehrere Geschosse ab, jedoch lösten Einschläge bzw. Trümmer ein Feuer in einer zivilen Industrieanlage nahe Sitra Island aus (keine Verletzten). Die iranischen Revolutionsgarden (IRGC) reklamierten einen kombinierten Angriff auf US-Stützpunkte in Bahrain (Al-Riffa und Awali, Standort der 5. US-Flotte).</div>\n<div class=\"p-2.5 rounded bg-surface-850 border border-slate-800\"><strong class=\"text-blue-400\">Tanker-Angriffe vor der Straße von Hormus:</strong> Die britische Seesicherheitsbehörde <em>UKMTO</em> meldete am Samstag, 21. November, Treffer durch unbekannte Geschosse auf zwei auslaufende Handelstanker nahe Khasab (Oman) am Ausgang der Straße von Hormus (einer am Heck, einer im Maschinenraum; keine Verletzten gemeldet). Iran präsentierte unterdessen einen neuen unterirdischen Doppel-Raketenwerfer.</div>\n</div>",
+      "tags": [
+        "#Israel",
+        "#IDF",
+        "#Gaza",
+        "#PIJ",
+        "#Libanon",
+        "#JosephAoun",
+        "#Iran",
+        "#Bahrain",
+        "#Hormuz"
+      ],
+      "link": "https://www.timesofisrael.com",
+      "embedType": "none"
+    },
     {
       "id": "israel-davids-sling-bureij-liberman-2026",
       "category": "israel",
