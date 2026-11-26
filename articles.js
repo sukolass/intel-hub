@@ -2,10 +2,63 @@
 // Diese Datei wird bei jeder Aktualisierung automatisch um neue Funde, Zusammenfassungen und Videos erweitert.
 
 window.INTEL_HUB_DATA = {
-  "lastUpdated": "2026-11-26T19:13:16.440066",
+  "lastUpdated": "2026-11-27T00:51:52.222643",
   "version": "1.1.0",
   "hubName": "Personal Intel & Apologetics Hub",
   "articles": [
+    {
+      "id": "israel-beqaa-radwan-abu-nada-ramat-hasharon-2026-11-27",
+      "category": "israel",
+      "archived": false,
+      "title": "IAF trifft Radwan-Raketen im Beqaa-Tal; Hamas droht nach Tod von Finanzchef Abu Nada; Terrorverdächtiger nahe Ramat Hasharon gefasst",
+      "source": "Times of Israel & Jerusalem Post",
+      "author": "IDF / Schin Bet / Times of Israel / JPost",
+      "date": "27. Nov 2026",
+      "badge": "Libanon, Gaza & Terrorabwehr",
+      "badgeColor": "blue",
+      "readTime": "4 Min. Lesezeit",
+      "summary": "Am späten Abend des 26. November und in der Nacht zum 27. November 2026 schlug die israelische Luftwaffe gegen dutzende Hisbollah-Raketen in einem Radwan-Lager im Beqaa-Tal zu. Gleichzeitig kündigte Hamas-Chef al-Hayya nach der Tötung von Hamas-Finanzchef Khaled Abu Nada Beratungen an, während Schin Bet und Yamam nahe Ramat Hasharon einen mutmaßlichen Attentäter festnahmen.",
+      "citizenTimeline": "Hohe Abschreckungsbereitschaft an Nord-, Gaza- und Heimatfront sowie fortgesetzte US-Seeblockade gegen den Iran",
+      "content": "<h4 class=\"font-bold text-white text-base mb-2\">1. Libanon &amp; Gaza: Schläge gegen Radwan-Waffenlager und Hamas-Führung</h4>\n<div class=\"space-y-2 text-xs mb-3\">\n<div class=\"p-2.5 rounded bg-surface-850 border border-slate-800\"><strong class=\"text-blue-400\">Beqaa-Tal (26. Nov., abends):</strong> Die israelische Luftwaffe (IAF) zerstörte nahe <strong>Ayn al-Tina</strong> im östlichen Beqaa-Tal (ca. 25 km nördlich der israelischen Grenze) dutzende Hisbollah-Raketen und -Werfer in einem Ausbildungslager der Eliteeinheit <strong>Radwan Force</strong>. Laut IDF waren die Waffen für Angriffe auf israelische Soldaten und Zivilisten vorgesehen; man halte am Waffenstillstand fest, werde aber keine Bedrohung dulden.</div>\n<div class=\"p-2.5 rounded bg-surface-850 border border-slate-800\"><strong class=\"text-blue-400\">Gaza / Khaled Abu Nada (26. Nov., abends):</strong> Nach der Bestätigung von IDF, Schin Bet, PM Netanjahu und Verteidigungsminister Katz, dass bei einem Luftschlag in <strong>Deir al-Balah</strong> das hochrangige Hamas-Politbüromitglied <strong>Khaled Abu Nada</strong> (laut IDF Chef der Hamas-Wirtschaftsabteilung für Banken- und Investmentnetze zur Terrorfinanzierung; laut palästinensischen Berichten stellv. Bildungsminister) getötet wurde, erklärte Hamas-Chef <strong>Khalil al-Hayya</strong> die fortgesetzten Schläge für „inakzeptabel“ und kündigte Abstimmungen über eine Reaktion an.</div>\n</div>\n<h4 class=\"font-bold text-white text-base mb-2\">2. Terrorabwehr im Inland, Ostjerusalem, Flugsicherheit &amp; Iran</h4>\n<div class=\"space-y-2 text-xs mb-3\">\n<div class=\"p-2.5 rounded bg-surface-850 border border-slate-800\"><strong class=\"text-blue-400\">Ramat Hasharon &amp; Ostjerusalem:</strong> Schin Bet, Polizei und Anti-Terror-Einheit <strong>Yamam</strong> nahmen nahe <strong>Ramat Hasharon</strong> aufgrund von Geheimdiensthinweisen auf einen geplanten Anschlag einen unbewaffneten palästinensischen Verdächtigen fest (laut <em>Maariv</em> vermutlich eingeschleuster ausländischer Akteur). In <strong>Ostjerusalem</strong> (Wadi al-Joz) ordneten Behörden binnen 30 Tagen die Schließung der lizenzlosen <em>Al-Shabat</em>-Oberschule nach Funden verbotener PA-Unterrichtsmaterialien und PLO-Symbole an.</div>\n<div class=\"p-2.5 rounded bg-surface-850 border border-slate-800\"><strong class=\"text-blue-400\">Flydubai &amp; Straße von Hormus:</strong> <strong>Flydubai</strong> nimmt nächste Woche nach Sicherheitsgesprächen die Verbindung nach <strong>Tel Aviv</strong> mit „neuen Sicherheitsmaßnahmen“ wieder auf (zwei Monate nach einem vereitelten Terror-/Entführungsversuch; israelische Airlines bleiben wegen des US-israelischen Iran-Krieges weiter ausgesperrt). US-Präsident <strong>Trump</strong> betonte gegenüber der US-Staffel VMFA-312 in den VAE, die USA hätten bereits 150 Raketen zum Schutz von Handelsschiffen in der <strong>Straße von Hormus</strong> abgefeuert und setzten die Seeblockade gegen den Iran fort.</div>\n</div>",
+      "tags": [
+        "#Israel",
+        "#IDF",
+        "#Hisbollah",
+        "#RadwanForce",
+        "#Gaza",
+        "#SchinBet",
+        "#Iran",
+        "#Sicherheit"
+      ],
+      "link": "https://www.timesofisrael.com/air-force-strikes-hezbollah-rockets-launchers-in-eastern-lebanon-idf/",
+      "embedType": "none"
+    },
+    {
+      "id": "labor-food-finless-tuna-hyphapro-egg-2026-11-26",
+      "category": "labor-food",
+      "archived": false,
+      "title": "Finless Foods skaliert Zucht-Thunfisch in Südkorea; Cranfield & HyphaPro fermentieren Ei-Protein Ovotransferrin",
+      "source": "Green Queen",
+      "author": "Finless Foods / Cranfield University / HyphaPro / IntegriCulture / SeaWith",
+      "date": "26. Nov 2026",
+      "badge": "Zuchtfisch & Ei-Fermentation",
+      "badgeColor": "emerald",
+      "readTime": "3 Min. Lesezeit",
+      "summary": "Am 26. November 2026 meldete Green Queen drei industrielle Schritte in der zellulären Landwirtschaft: Finless Foods skaliert kultivierten Blauflossen-Thunfisch in Südkoreas Sonderzone Uiseong, Cranfield University und HyphaPro entwickeln pilzfermentiertes Ei-Protein (Ovotransferrin), und IntegriCulture sowie SeaWith verbünden sich für Zellkosmetik.",
+      "citizenTimeline": "Südkorea etabliert Uiseong als Pilot-Drehscheibe für Zuchtfisch & Zuchtfleisch (Zentrum öffnet 2027); britische Pilz-Fermentation erschließt Ei-Proteine",
+      "content": "<h4 class=\"font-bold text-white text-base mb-2\">1. Finless Foods: Zellkultivierter Blauflossen-Thunfisch in Uiseong (Südkorea)</h4>\n<p class=\"text-slate-300 text-xs mb-3 leading-relaxed\">Das US-Startup <strong>Finless Foods</strong> schloss am 26. November 2026 in Seoul ein dreijähriges MoU mit dem <strong>Gyeongbuk Technopark</strong>. Ziel ist es, Forschung, Prozessskalierung und Kommerzialisierung von zellkultiviertem Pazifischem Blauflossen-Thunfisch am 2027 eröffnenden <em>Food Tech Research Support Center</em> im rund 225.850 m² großen <strong>Uiseong Biofood Valley</strong> (Sonderzone für zelluläre Landwirtschaft) aufzubauen – inklusive Option auf spätere Exporte in die USA nach behördlicher Zulassung.</p>\n<h4 class=\"font-bold text-white text-base mb-2\">2. Tierfreies Ei-Protein &amp; Zellkosmetik als frühe Erlösbrücken</h4>\n<div class=\"space-y-2 text-xs mb-3\">\n<div class=\"p-2.5 rounded bg-surface-850 border border-slate-800\"><strong class=\"text-emerald-400\">Cranfield University &amp; HyphaPro (Präzisionsfermentation):</strong> Gefördert vom britischen <em>National Alternative Protein Innovation Centre (NAPIC)</em> entwickeln Forscher eine pilzbasierte Präzisionsfermentation für <strong>Ovotransferrin</strong> – das zweithäufigste Hühnereiweiß-Protein (12–13 % Anteil) mit eisenbindenden und antimikrobiellen Eigenschaften für Functional Food und Supplements.</div>\n<div class=\"p-2.5 rounded bg-surface-850 border border-slate-800\"><strong class=\"text-emerald-400\">IntegriCulture &amp; SeaWith:</strong> Die Zuchtfleisch-Startups aus Tokio (Ei-Zell-Hautserum) und Uiseong (Marine-Zellkosmetik <em>Miok</em>; plant zudem ein 15-Mio.-$-Werk für kultiviertes Hanwoo-Rind) kooperieren beim gegenseitigen Marktausbau in Japan und Südkorea.</div>\n</div>",
+      "tags": [
+        "#KultivierterFisch",
+        "#FinlessFoods",
+        "#Präzisionsfermentation",
+        "#Ovotransferrin",
+        "#HyphaPro",
+        "#Zellkosmetik",
+        "#LaborFleisch"
+      ],
+      "link": "https://www.greenqueen.com.hk/finless-foods-cultivated-bluefin-tuna-toro-seafood-south-korea-gyeongbuk-uiseong/",
+      "embedType": "none"
+    },
     {
       "id": "perowskit-utmolight-nanodiamond-hkust-2026-11-26",
       "category": "perowskit",
