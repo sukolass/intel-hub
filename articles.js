@@ -2,10 +2,91 @@
 // Diese Datei wird bei jeder Aktualisierung automatisch um neue Funde, Zusammenfassungen und Videos erweitert.
 
 window.INTEL_HUB_DATA = {
-  "lastUpdated": "2026-11-27T00:51:52.222643",
+  "lastUpdated": "2026-11-28T00:52:29.273378",
   "version": "1.1.0",
   "hubName": "Personal Intel & Apologetics Hub",
   "articles": [
+    {
+      "id": "israel-msf-hamas-hezbollah-boats-hormuz-2026-11-28",
+      "category": "israel",
+      "archived": false,
+      "title": "Gaza: IDF eliminiert Hamas-Terroristen in MSF-Klinik & 4 Okt.-7-Täter; Hisbollah-Spionage per Fischerboot; US-Schlag vor Iran",
+      "source": "Jerusalem Post & Times of Israel",
+      "author": "IDF / Schin Bet / CENTCOM / JPost / ToI",
+      "date": "28. Nov 2026",
+      "badge": "Gaza, Libanon-See & Hormus",
+      "badgeColor": "blue",
+      "readTime": "4 Min. Lesezeit",
+      "summary": "Am 27.–28. November 2026 meldete die IDF die Tötung zweier Hamas-Terroristen in Gaza-Stadt – darunter ein Artilleriekommandeur –, die als Sicherheitsleute einer MSF-Klinik getarnt waren, sowie eine Wochenbilanz von 10 ausgeschalteten Terroristen (inkl. 4 Oktober-7-Tätern). Verhöre enthüllten zudem Hisbollah-Marinespionage über zivile Fischerboote, während US-Kräfte einen iranischen Blockadebrecher im Golf von Oman stoppten.",
+      "citizenTimeline": "Anhaltende proaktive Terrorabwehr an Gaza- und Nordfront sowie harte Durchsetzung der US-Seeblockade vor dem Iran",
+      "content": "<h4 class=\"font-bold text-white text-base mb-2\">1. Gaza: Hamas-Kader in MSF-Klinik &amp; Oktober-7-Bilanz</h4>\n<div class=\"space-y-2 text-xs mb-3\">\n<div class=\"p-2.5 rounded bg-surface-850 border border-slate-800\"><strong class=\"text-blue-400\">Gaza-Stadt (27./28. Nov.):</strong> Bei einem Präzisionsschlag am Freitagabend schaltete die IDF in Gaza-Stadt die Hamas-Terroristen <strong>Ahmed Safian Muhammad Ali Abu Hazeera</strong> und <strong>Muayad Youssef Alizbach</strong> (Artilleriekommandeur des militärischen Flügels) aus. Beide arbeiteten laut Armee als Sicherheitspersonal einer Klinik von <em>Ärzte ohne Grenzen (MSF)</em> und trieben weiter Angriffe sowie den Wiederaufbau der Hamas voran.</div>\n<div class=\"p-2.5 rounded bg-surface-850 border border-slate-800\"><strong class=\"text-blue-400\">Wochenbilanz (27. Nov.):</strong> IDF und Schin Bet bestätigten die Eliminierung von insgesamt <strong>10 Hamas- und PIJ-Terroristen</strong> binnen einer Woche – darunter <strong>vier Täter des 7. Oktober</strong>, inklusive <strong>Yousef Ayidi</strong> (beteiligt an der Geiselübergabe-Inszenierung von Eli Sharabi, Ohad Ben Ami und Or Levy) sowie Nukhba-Kräfte – und zerstörten am Donnerstag vier Hamas-Waffenlager. Ein Sohn von Hamas-Chef Khalil al-Hayya soll einen Schlag in Gaza-Stadt überlebt haben.</div>\n</div>\n<h4 class=\"font-bold text-white text-base mb-2\">2. Nordfront, Iran-Blockade &amp; Sicherheitskabinett</h4>\n<div class=\"space-y-2 text-xs mb-3\">\n<div class=\"p-2.5 rounded bg-surface-850 border border-slate-800\"><strong class=\"text-blue-400\">Hisbollah-Fischerboote &amp; UNIFIL (27./28. Nov.):</strong> IDF-Verhöre belegen, dass Hisbollah-Terroristen vor dem Südlibanon <strong>zivile Fischerboote</strong> nutzen, um sich israelischen Marineschiffen zu nähern und diese auszuspionieren. Parallel verhandelt der UN-Sicherheitsrat über eine französische Übergangslösung für den Südlibanon nach dem Auslaufen des UNIFIL-Mandats am 31. Dezember.</div>\n<div class=\"p-2.5 rounded bg-surface-850 border border-slate-800\"><strong class=\"text-blue-400\">Golf von Oman &amp; Straße von Hormus (27./28. Nov.):</strong> Ein US-Militärflugzeug schaltete den aus Bandar Abbas ausgelaufenen, unter Palau-Flagge fahrenden Frachter <em>M/V Pacific Archer</em> nach Missachtung mehrerer Warnungen antriebslos aus, um den Bruch der US-Seeblockade zu verhindern. Führende IRGC- und Marinevertreter (u. a. Khamenei-Berater Mohammad Mokhber und Marinechef Shahram Irani) drohten daraufhin mit dem Durchbrechen der Blockade.</div>\n<div class=\"p-2.5 rounded bg-surface-850 border border-slate-800\"><strong class=\"text-blue-400\">Politischer Rahmen:</strong> Unter US-Druck berät das israelische Sicherheitskabinett über Schritte für den stockenden Trump-Gaza-Plan samt möglicher ISF-Stabilisierungstruppe; in den Koalitionsgesprächen mit Gadi Eisenkot signalisierte Ra’am-Chef Mansour Abbas laut <em>Times of Israel</em> die Bereitschaft, Hamas als Terrororganisation einzustufen.</div>\n</div>",
+      "tags": [
+        "#Israel",
+        "#IDF",
+        "#Gaza",
+        "#SchinBet",
+        "#Hisbollah",
+        "#UNIFIL",
+        "#Iran",
+        "#Hormus",
+        "#Sicherheit"
+      ],
+      "link": "https://www.jpost.com/israel-news/defense-news/article-916350",
+      "embedType": "none"
+    },
+    {
+      "id": "photogrammetrie-spirula-2026-11-27-hololab-arrival-2026-11-27",
+      "category": "photogrammetrie",
+      "archived": false,
+      "title": "Spirula Studio v2026.11.27 beschleunigt AMD-RDNA-4-Training um bis zu 39 % & bringt Live-Meshing-Vorschau; HoloLab vertreibt Arrival.Space in Japan",
+      "source": "Radiance Fields",
+      "author": "Michael Rubloff / Spirula Studio / Stratum1 & HoloLab",
+      "date": "27. Nov 2026",
+      "badge": "3DGS-Trainer & Meshing-Vorschau",
+      "badgeColor": "cyan",
+      "readTime": "3 Min. Lesezeit",
+      "summary": "Am 27. November 2026 stellte Radiance Fields Spirula Studio v2026.11.27 vor: Der Open-Source-Vulkan-Trainer erhält einen 3-Klassen-Maskenmodus (segment_and_ignore), reduziert die Trainingszeit auf AMD RDNA 4 um 37–39 % und liefert beim Splat-to-Mesh eine Live-Vorschau. Zudem wird HoloLab Japan-Partner für Stratum1s Browser-3DGS-Plattform Arrival.Space.",
+      "citizenTimeline": "Spirula Studio v2026.11.27 ab sofort lokal auf NVIDIA, AMD, Intel & Apple Silicon nutzbar; XR-Kaigi-Start in Japan am 1.–2. Dez.",
+      "content": "<h4 class=\"font-bold text-white text-base mb-2\">1. Spirula Studio v2026.11.27: Maskierung, RDNA-4-Tempo &amp; Live-Meshing</h4>\n<p class=\"text-slate-300 text-xs mb-3 leading-relaxed\">Der plattformübergreifende C++/Vulkan-Trainer <strong>Spirula Studio</strong> erschien am 27. November 2026 in Version <code>v2026.11.27</code>. Die neue Graustufen-Option <code>--mask-mode segment_and_ignore</code> liest eine einzelne Maske dreistufig aus: Werte <code>0–127</code> werden komplett ignoriert, <code>128–250</code> aktiv gegen Leerraum segmentiert (ideal für bewegliche Störobjekte/Himmel) und <code>&gt;250</code> regulär als statische Szene trainiert.</p>\n<div class=\"space-y-2 text-xs mb-3\">\n<div class=\"p-2.5 rounded bg-surface-850 border border-slate-800\"><strong class=\"text-cyan-400\">Performance &amp; VRAM:</strong> Durch ein Compare-and-Swap-Verfahren statt nativer Float-Atomics in zwei Backward-Kernels sinkt die Trainingszeit auf <strong>AMD RDNA 4</strong> (Radeon AI PRO R9700, 30.000 Schritte auf der Garden-Szene) unter Linux und Windows um <strong>37–39 %</strong>. Neu sind zudem geringerer VRAM-Bedarf, eine genauere Speicherprognose mit Spartipps im GUI sowie <code>--max-resolution</code>.</div>\n<div class=\"p-2.5 rounded bg-surface-850 border border-slate-800\"><strong class=\"text-cyan-400\">Große Szenen &amp; Splat-to-Mesh:</strong> Ein neuer <strong>Voronoi-Partitionierungsmodus</strong> teilt riesige Datensätze sauberer auf und behebt einen 32-Bit-SfM-Indexfehler. Das integrierte Meshing liefert nun höhere Geometrie-Qualität samt <strong>Live-Vorschau</strong>. Ergänzt werden Y-up-PLY-Export für PlayCanvas SuperSplat, Telemetrie-Parsing für die <em>DJI Osmo 360 II</em> und Skybox-Hintergründe im Viewer.</div>\n</div>\n<h4 class=\"font-bold text-white text-base mb-2\">2. Stratum1 (Arrival.Space) &amp; HoloLab: Japan-Ausbau</h4>\n<div class=\"space-y-2 text-xs mb-3\">\n<div class=\"p-2.5 rounded bg-surface-850 border border-slate-800\"><strong class=\"text-cyan-400\">Browser-3DGS per URL &amp; Agentic 3D Web:</strong> Das Tokioter XR-Unternehmen <strong>HoloLab</strong> übernimmt laut Bericht vom 27. Nov. Vertrieb, Support und Vor-Ort-Erfassung (via <em>XGRIDS</em>-Scannern) für die Grazer Browser-Plattform <strong>Arrival.Space</strong> (inkl. Chat-KI-Szeneneditor, Sprach-NPCs und Animated SOG). Vorgestellt wird die Kooperation auf der <em>XR Kaigi 2026</em> (1.–2. Dezember in Tokio).</div>\n</div>",
+      "tags": [
+        "#GaussianSplatting",
+        "#SpirulaStudio",
+        "#SplatToMesh",
+        "#Vulkan",
+        "#AMDRDNA4",
+        "#ArrivalSpace",
+        "#HoloLab",
+        "#Photogrammetrie"
+      ],
+      "link": "https://radiancefields.com/spirula-studio-v2026.11.27-adds-a-three-class-mask-mode",
+      "embedType": "none"
+    },
+    {
+      "id": "apologetik-ip-islamic-dilemma-dougherty-seeker-2026-11-27",
+      "category": "apologetik",
+      "archived": false,
+      "title": "InspiringPhilosophy zum „Islamic Dilemma“ & Melissa Dougherty über Stärken und Risiken der Seeker-Sensitive-Bewegung",
+      "source": "YouTube (@InspiringPhilosophy & @MelissaDougherty)",
+      "author": "Michael Jones (InspiringPhilosophy) / Melissa Dougherty",
+      "date": "27. Nov 2026",
+      "badge": "2 neue Videos (27. Nov.)",
+      "badgeColor": "purple",
+      "readTime": "3 Min. Lesezeit",
+      "summary": "Am 27. November 2026 erschienen zwei neue Langform-Videos aus dem beobachteten Apologeten-Kreis: Michael Jones (InspiringPhilosophy) analysiert in knapp 14 Minuten apologetische Ausweichversuche zum „Islamic Dilemma“ (Koran vs. Thora/Evangelium), während Melissa Dougherty in einem 48-Minuten-Beitrag Stärken und New-Thought-Prägungen der Seeker-Sensitive-Kirchenbewegung beleuchtet.",
+      "citizenTimeline": "Beide Videos wurden am 27. November 2026 auf YouTube veröffentlicht; die übrigen beobachteten Kanäle legten am 27. Nov. keine neuen Uploads vor",
+      "content": "<h4 class=\"font-bold text-white text-base mb-2\">1. InspiringPhilosophy (Michael Jones) – 27. Nov. 2026</h4>\n<div class=\"space-y-2 text-xs mb-3\">\n<div class=\"p-2.5 rounded bg-surface-850 border border-slate-800\"><strong class=\"text-purple-400\">„These Islamic Scholars CAN’T Solve The Islamic Dilemma“ (13:40 Min.):</strong> Michael Jones reagiert auf aktuelle Diskussionen bei <em>MythVision</em> sowie Argumentationsmuster islamischer Gelehrter (<a href=\"https://www.youtube.com/watch?v=gqI7fgxKXOI\" target=\"_blank\" class=\"text-purple-300 underline\">Video ansehen</a>). Im Kern prüft er u. a. Umdeutungen des Sinai-Zitats, die These eines „himmlischen Buches“, die koranische Bestätigung vorliegender Schriften (Thora und Evangelium) sowie fünf behauptete Textmängel.</div>\n</div>\n<h4 class=\"font-bold text-white text-base mb-2\">2. Melissa Dougherty – 27. Nov. 2026</h4>\n<div class=\"space-y-2 text-xs mb-3\">\n<div class=\"p-2.5 rounded bg-surface-850 border border-slate-800\"><strong class=\"text-purple-400\">„The Pros and Cons of the Controversial Seeker Sensitive Movement.“ (48:39 Min.):</strong> Dougherty untersucht die Wurzeln der sogenannten <em>Seeker-Sensitive</em>-Gemeindebewegung (<a href=\"https://www.youtube.com/watch?v=ySfnduyh18M\" target=\"_blank\" class=\"text-purple-300 underline\">Video ansehen</a>) und zeichnet Verbindungslinien von <em>Robert Schullers</em> „Positive Thinking“ / „Self-Esteem-Evangelium“ (New Thought) bis zu modernen Megachurch-Konzepten (u. a. Bill Hybels, Rick Warren, Andy Stanley, Joel Osteen, Steven Furtick) – inklusive differenzierter Abwägung legitimer missionarischer Anliegen gegen theologische Verwässerung.</div>\n</div><h4 class=\"font-bold text-white text-base mb-2\">3. Status der übrigen beobachteten Kanäle</h4>\n<p class=\"text-slate-300 text-xs leading-relaxed\">Auf den Kanälen von <strong>Mike Winger</strong>, <strong>Wes Huff</strong>, <strong>Testify (Erik Manning)</strong>, <strong>Gavin Ortlund (Truth Unites)</strong> sowie <strong>Lydia, Timothy und Bethel McGrew</strong> gab es seit dem letzten Update (27. Nov., 00:51 Uhr) keine neuen YouTube-Uploads.</p>",
+      "tags": [
+        "#InspiringPhilosophy",
+        "#MichaelJones",
+        "#MelissaDougherty",
+        "#IslamicDilemma",
+        "#SeekerSensitive",
+        "#Apologetik",
+        "#YouTube"
+      ],
+      "link": "https://www.youtube.com/watch?v=gqI7fgxKXOI",
+      "embedType": "none"
+    },
     {
       "id": "israel-beqaa-radwan-abu-nada-ramat-hasharon-2026-11-27",
       "category": "israel",
